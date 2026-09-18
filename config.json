@@ -1,0 +1,7 @@
+﻿{
+    "picture_output_folder": "E:\windows\VRC-Cache",
+    "picture_output_split_by_date": true,
+    "cache_directory": "E:\windows\VRC-Cache",
+    "cache_size": 100,
+    "cache_expiry_delay": 60
+}
