@@ -1,0 +1,28 @@
+# Logs
+*.log
+SteamVR_DisplayOptimizer.log
+WindowResizer.log
+pywinauto-mcp.log
+
+# Personal / Self-publish tools
+vrc-config-manager/
+vrc_config_*.json
+*.personal.json
+
+# Temporary & OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+
+# Development & Editor files
+.agents/
+AGENTS.md
+skills-lock.json
+UnityAssets/
+blender_scripts/
+scripts/
+test_samples/
+.vscode/
+.idea/
