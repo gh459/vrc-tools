@@ -1,0 +1,1 @@
+﻿reg export "HKCU\Software\VRChat\vrchat" "$env:USERPROFILE\Downloads\vrchat-settings.reg" /y
