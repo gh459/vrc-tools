@@ -1,10 +1,10 @@
-# sharp-hopper: Windows & VR Productivity Tools
+# vrc-tools: Windows & VR Productivity Tools
 
-日常の PC 操作や VR（SteamVR / VRChat 等）体験を快適・最適化するために作成された、軽量かつ高機能な自作 Windows ユーティリティ集です。
+日常の PC 操作や VR（SteamVR / VRChat 等）体験を快適・最適化するために作成された、軽量かつ高機能な自作 Windows ユーティリティ＆設定集です。
 
 ---
 
-## 📦 収録ツール一覧
+## 📦 収録ツール・設定一覧
 
 ### 1. 🥽 [SteamVR Display Optimizer](./steamvr-display-optimizer/)
 SteamVR の起動・終了を OS カーネルレベルの同期イベント待機（`WaitForExit`）で検知し、自動的にマルチディスプレイ構成を最適化・復元する超低負荷バックグラウンド常駐ツールです。
@@ -26,6 +26,23 @@ SteamVR の起動・終了を OS カーネルレベルの同期イベント待�
 - **Per-Monitor DPI v2 対応**: 異なる拡大率のマルチモニター環境でもピクセルずれなく正確に復元。
 - **タスクバー非表示（ステルスモード）**・音響フィードバック・外部設定ファイル（`WindowResizer.ini`）による柔軟なカスタマイズに対応。
 - 詳細および使い方は [window-resizer/README.md](./window-resizer/README.md) をご覧ください。
+
+---
+
+### 3. ⚙️ [VRChat ＆ 周辺デバイス各種設定・プリセット集](./vrc-settings/)
+VRChat 環境の移行・最適化、周辺コントローラー、モーショントラッキング用の設定・プロファイル集です。
+
+- **`VRC設定エクスポート.ps1` / `VRC設定インポート.ps1`**:
+  - `reg export` / `reg import` による VRChat 設定レジストリ（`HKCU\Software\VRChat\vrchat`）のワンクリック高速バックアップ＆復元スクリプト。
+- **`config.json`**:
+  - VRChat 本体のキャッシュ保存先や写真出力先を別ドライブ（`E:\windows\VRC-Cache`）へリダイレクトし、C ドライブの枯渇を防ぐ最適化設定。
+- **`repositories.txt`**:
+  - lilToon, Modular Avatar, AAO, LLC 等、アバター制作・改変で必須となる主要 VPM リポジトリ URL 一覧。
+- **`rebo.rebo_setting`**:
+  - ReBones（AI モーショントラッキング / VMC 連携 / IK 補正）のプロファイル設定。
+- **AddCon コントローラー設定 (`VRChat.json`, `汎用.json`, `addcon_settings_20260902.json`)**:
+  - 左手・右手デバイス「AddCon」向けの OSC 操作（移動・ジャンプ・マイク）、カメラ制御（ズーム・露出・自撮り・フライング）、デスクトップ操作、アバターパラメータ（LightLimitChanger, PCSS, 視線高さ）割り当てプリセット。
+- 詳細および各設定の反映方法は [vrc-settings/README.md](./vrc-settings/README.md) をご覧ください。
 
 ---
 
