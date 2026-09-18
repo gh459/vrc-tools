@@ -29,11 +29,22 @@ SteamVR の起動・終了を OS カーネルレベルの同期イベント待�
 
 ---
 
-### 3. ⚙️ [VRChat ＆ 周辺デバイス各種設定・プリセット集](./vrc-settings/)
-VRChat 環境の移行・最適化、周辺コントローラー、モーショントラッキング用の設定・プロファイル集です。
+### 3. 🔄 [VRChat 設定レジストリ管理ツール](./vrc-registry-tool/)
+VRChat の設定レジストリ（`HKCU\Software\VRChat\vrchat`）をワンクリックで安全にエクスポート（バックアップ）およびインポート（復元）するための専用ツール集です。
 
 - **`VRC設定エクスポート.ps1` / `VRC設定インポート.ps1`**:
-  - `reg export` / `reg import` による VRChat 設定レジストリ（`HKCU\Software\VRChat\vrchat`）のワンクリック高速バックアップ＆復元スクリプト。
+  - `reg export` / `reg import` コマンドにより、ダウンロードフォルダへ設定ファイルを高速出力・安全復元。
+- **`VRC設定エクスポート.bat` / `VRC設定インポート.bat`**:
+  - ダブルクリックで誰でも即座に実行可能。
+- **`VRC設定インポート＆エクスポート.ps1`**:
+  - 型情報（DWord/QWord自動昇格、Binary Base64保持）に対応した JSON 形式の統合対話マネージャー。
+- 詳細および使い方は [vrc-registry-tool/README.md](./vrc-registry-tool/README.md) をご覧ください。
+
+---
+
+### 4. ⚙️ [VRChat ＆ 周辺デバイス各種設定・プリセット集](./vrc-settings/)
+VRChat 環境の最適化、周辺コントローラー、モーショントラッキング用の設定・プロファイル集です。
+
 - **`config.json`**:
   - VRChat 本体のキャッシュ保存先や写真出力先を別ドライブ（`E:\windows\VRC-Cache`）へリダイレクトし、C ドライブの枯渇を防ぐ最適化設定。
 - **`repositories.txt`**:

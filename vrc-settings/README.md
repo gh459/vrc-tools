@@ -1,6 +1,8 @@
 # VRChat ＆ 関連周辺設定・プロファイル集 (vrc-settings)
 
-VRChat 環境の最適化、コントローラー・トラッキングデバイスの設定、および VPM パッケージ管理に必要な設定ファイル群です。
+VRChat 環境の最適化、コントローラー・トラッキングデバイスの設定、および VPM パッケージ管理に必要な設定・プリセットファイル集です。
+
+※ VRChat レジストリのインポート／エクスポートツールは [../vrc-registry-tool/](../vrc-registry-tool/) に独立して配置されています。
 
 ---
 
@@ -8,8 +10,6 @@ VRChat 環境の最適化、コントローラー・トラッキングデバイ�
 
 | ファイル名 | 種別 | 説明 |
 | :--- | :--- | :--- |
-| **`VRC設定エクスポート.ps1`** | PowerShell | `reg export` を用いて VRChat の全レジストリ設定をダウンロードフォルダへ即座にバックアップ |
-| **`VRC設定インポート.ps1`** | PowerShell | 既存設定の自動バックアップを取りつつ、エクスポートした設定を安全にレジストリへ復元 |
 | **`config.json`** | JSON | VRChat 公式クライアント設定（キャッシュ保存先・容量・写真保存先変更） |
 | **`repositories.txt`** | テキスト | VPM (VRChat Package Manager) の主要リポジトリ URL リスト |
 | **`rebo.rebo_setting`** | 設定ファイル | ReBones（モーショントラッキング・IK・VMC連携）のプロファイル設定 |
@@ -21,13 +21,7 @@ VRChat 環境の最適化、コントローラー・トラッキングデバイ�
 
 ## 🛠️ 各ファイルの詳細と使い方
 
-### 1. VRChat レジストリ移行スクリプト
-- **`VRC設定エクスポート.ps1`**:
-  - 実行すると、`HKCU\Software\VRChat\vrchat` の内容を `%USERPROFILE%\Downloads\vrchat-settings.reg` へ出力します。
-- **`VRC設定インポート.ps1`**:
-  - 実行すると、現在の設定を `%USERPROFILE%\Downloads\vrchat-settings-backup.reg` に退避した上で、`vrchat-settings.reg` の設定をレジストリへ取り込みます。
-
-### 2. VRChat クライアント設定 (`config.json`)
+### 1. VRChat クライアント設定 (`config.json`)
 VRChat 公式クライアントの詳細動作を制御する設定ファイルです。
 
 - **配置場所**: `%LOCALAPPDATA%Low\VRChat\VRChat\config.json`
@@ -44,7 +38,7 @@ VRChat 公式クライアントの詳細動作を制御する設定ファイル�
   - C ドライブの圧迫を防ぐため、VRChat のアバター・ワールドキャッシュおよびスクリーンショット保存先を別ドライブ（`E:\windows\VRC-Cache`）へリダイレクトします。
   - キャッシュ最大容量を 100GB に設定し、キャッシュ保持期間を最適化しています。
 
-### 3. VPM リポジトリリスト (`repositories.txt`)
+### 2. VPM リポジトリリスト (`repositories.txt`)
 VRChat アバター・ワールド改変で必須となる主要ツールの VPM リポジトリ一覧です。
 
 - **収録リポジトリ**:
@@ -57,11 +51,11 @@ VRChat アバター・ワールド改変で必須となる主要ツールの VPM
 - **追加方法**:
   `vrc-get` または ALCOM / VCC のリポジトリ追加欄に URL を貼り付けて登録します。
 
-### 4. ReBones トラッキング設定 (`rebo.rebo_setting`)
+### 3. ReBones トラッキング設定 (`rebo.rebo_setting`)
 AI モーショントラッキング / 骨格トラッキング支援ツール「ReBones」の設定バイナリ（pickle 形式）です。
 - VMC プロトコル出力、IK 補正（大腿・肩・脊椎の角度・スライド連動）、VR 空間内でのトラッカー配置座標などがキャリブレーションされています。
 
-### 5. AddCon コントローラー設定 (`VRChat.json`, `汎用.json`, `addcon_settings_20260902.json`)
+### 4. AddCon コントローラー設定 (`VRChat.json`, `汎用.json`, `addcon_settings_20260902.json`)
 左手・右手デバイス「AddCon」向けの割り当てプロファイルです。
 
 - **`VRChat.json`**:
