@@ -1,64 +1,71 @@
 # VRChat 設定レジストリ管理ツール (vrc-registry-tool)
 
-VRChat の設定レジストリ（`HKCU\Software\VRChat\vrchat`）をワンクリックでバックアップおよび復元するためのツール集です。
+VRChat の設定レジストリ（`HKCU\Software\VRChat\vrchat`）を `.reg` 形式で素早くバックアップおよび復元・移行するための PowerShell スクリプト集です。
 
-PC の移行時、OS クリーンインストール時、またはグラフィック設定・アバター表示設定・オーディオ設定を保存・共有したい時に役立ちます。
+PC の移行時、OS クリーンインストール時、またはグラフィック設定・アバター表示設定・オーディオ設定の保存やトラブル時の復旧に役立ちます。
 
 ---
 
-## 📁 収録スクリプト・ファイル一覧
+## 📁 収録ファイル一覧
 
-| ファイル名 | 種別 | 説明 |
-| :--- | :--- | :--- |
-| **`VRC設定エクスポート.bat`** | バッチ | ダブルクリックで現在の設定を `%USERPROFILE%\Downloads\vrchat-settings.reg` へワンクリック書き出し |
-| **`VRC設定インポート.bat`** | バッチ | 確認プロンプトを経て `vrchat-settings.reg` をレジストリへ取り込み（事前自動バックアップ付） |
-| **`VRC設定エクスポート.ps1`** | PowerShell | Windows 標準の `reg export` コマンドでレジストリを `.reg` 形式でダウンロードフォルダへ保存 |
-| **`VRC設定インポート.ps1`** | PowerShell | 既存設定をバックアップ（`vrchat-settings-backup.reg`）した上で設定を取り込む安全復元スクリプト |
-| **`VRC設定インポート＆エクスポート.ps1`** | PowerShell | **統合版スクリプト**。型情報（String/DWord/QWord/Binary）を保持して JSON バックアップを作成・復元する高度なツール |
-| **`VRC設定マネージャー.bat`** | バッチ | 統合版スクリプトの対話式メニュー（エクスポート／インポート／DryRun 選択）を起動 |
+| ファイル名 | 説明 |
+| :--- | :--- |
+| **`VRC設定エクスポート.ps1`** | `reg export` を実行し、現在の VRChat 設定をダウンロードフォルダへ `.reg` ファイルとして即座に書き出します。 |
+| **`VRC設定インポート.ps1`** | 移行先 PC で既存設定を自動バックアップした上で、ダウンロードフォルダの `.reg` ファイルをレジストリへ安全に取り込みます。 |
 
 ---
 
 ## 🚀 使い方
 
-### 1. シンプル操作（`.reg` 形式で素早く移行）
+### 1. 移行元 PC: 設定のエクスポート（バックアップ）
 
-- **設定を書き出す**:
-  `VRC設定エクスポート.bat` をダブルクリックします。
-  - 出力先: `C:\Users\<ユーザー名>\Downloads\vrchat-settings.reg`
-- **設定を取り込む**:
-  移行先 PC の Downloads フォルダに `vrchat-settings.reg` を置いた状態で、`VRC設定インポート.bat` をダブルクリックして `Y` を入力します。
-  - 実行直前に `vrchat-settings-backup.reg` が自動保存されるため、いつでも元に戻せます。
+PowerShell で `VRC設定エクスポート.ps1` を実行します（右クリックして「PowerShell で実行」またはターミナルから実行）。
 
-### 2. 高度な操作（JSON 形式・対話メニュー）
-
-`VRC設定マネージャー.bat` をダブルクリックすると、対話式メニューが立ち上がります。
-
-```text
-=====================================================
-   VRChat 設定マネージャー (インポート & エクスポート)
-=====================================================
-
- [1] 設定をエクスポートする (JSONファイルにバックアップ保存)
- [2] 設定をインポートする (JSONファイルからレジストリへ復元)
- [3] インポートのテスト実行 (Dry-Run: 変更せずに検証)
- [0] 終了
-
-番号を選択してください (1/2/3/0):
-```
-
-PowerShell から直接実行する場合：
 ```powershell
-# エクスポート
-.\VRC設定インポート＆エクスポート.ps1 -Export -IncludeTimestampBackup
-
-# シミュレーション（レジストリを変更せずに事前確認）
-.\VRC設定インポート＆エクスポート.ps1 -Import -DryRun
+powershell.exe -ExecutionPolicy Bypass -File .\VRC設定エクスポート.ps1
 ```
+
+- **出力先**: `C:\Users\<ユーザー名>\Downloads\vrchat-settings.reg`
+- この生成された `vrchat-settings.reg` を、USB メモリやクラウド等を経由して移行先 PC へコピーします。
+
+---
+
+### 2. 移行先 PC: 設定のインポート（復元）
+
+1. エクスポートした `vrchat-settings.reg` を移行先 PC の **「ダウンロード」フォルダ**（`%USERPROFILE%\Downloads\`）に配置します。
+2. PowerShell で `VRC設定インポート.ps1` を実行します。
+
+```powershell
+powershell.exe -ExecutionPolicy Bypass -File .\VRC設定インポート.ps1
+```
+
+- **二重の安全機能**:
+  インポートを実行する直前に、移行先 PC に元々あった既存設定が自動的に `vrchat-settings-backup.reg` としてダウンロードフォルダへ退避保存されます。万が一元の状態に戻したくなった場合でも安心です。
+
+---
+
+## ⚙️ スクリプトの動作仕様
+
+### `VRC設定エクスポート.ps1`
+```powershell
+reg export "HKCU\Software\VRChat\vrchat" "$env:USERPROFILE\Downloads\vrchat-settings.reg" /y
+```
+- OS 標準の `reg export` コマンドを呼び出し、VRChat の全設定キーを Windows 標準のレジストリファイルとして高速出力します。
+
+### `VRC設定インポート.ps1`
+```powershell
+# 移行先：既存設定のバックアップ
+reg export "HKCU\Software\VRChat\vrchat" "$env:USERPROFILE\Downloads\vrchat-settings-backup.reg" /y
+
+# 移行先：移行元の設定を取り込み
+reg import "$env:USERPROFILE\Downloads\vrchat-settings.reg"
+```
+- 既存のレジストリ状態を退避してから取り込みを行うため、設定が消失するリスクを未然に防ぎます。
 
 ---
 
 ## ⚠️ ご注意
 
 > [!CAUTION]
-> 書き出されたレジストリファイル（`.reg` や `.json`）には、ご使用のアカウントに関連するユーザー識別子等の情報が含まれる場合があります。他者へのファイル共有やパブリックリポジトリへのコミットを行う際は、テキストエディタで内容をご確認の上、取り扱いにご注意ください。
+> 書き出された `vrchat-settings.reg` には、ご使用の環境のユーザー識別子（`unity.cloud_userid` 等）やアカウント関連キーが含まれる場合があります。
+> 第三者へ共有する際や GitHub 等の公開リポジトリへアップロードする際は、テキストエディタで中身を確認し、個人情報が含まれていないか事前にご確認ください。
