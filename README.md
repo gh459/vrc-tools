@@ -48,7 +48,7 @@ VRChat 環境の最適化、周辺コントローラー、モーショントラ�
 - **`repositories.txt`**:
   - lilToon, Modular Avatar, AAO, LLC 等、アバター制作・改変で必須となる主要 VPM リポジトリ URL 一覧。
 - **`rebo.rebo_setting`**:
-  - ReBones（AI モーショントラッキング / VMC 連携 / IK 補正）のプロファイル設定。
+  - rebocap（AI モーショントラッキング / VMC 連携 / IK 補正）のプロファイル設定。
 - **AddCon コントローラー設定 (`VRChat.json`, `汎用.json`, `addcon_settings_20260902.json`)**:
   - 左手・右手デバイス「AddCon」向けの OSC 操作（移動・ジャンプ・マイク）、カメラ制御（ズーム・露出・自撮り・フライング）、デスクトップ操作、アバターパラメータ（LightLimitChanger, PCSS, 視線高さ）割り当てプリセット。
 - 詳細および各設定の反映方法は [vrc-settings/README.md](./vrc-settings/README.md) をご覧ください。
