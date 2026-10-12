@@ -1,0 +1,14 @@
+﻿Command: DISM /English /Get-WimInfo /WimFile:<install.wim> /CheckIntegrity
+ExitCode: 87
+
+
+Deployment Image Servicing and Management tool
+Version: 10.0.26100.8972
+
+
+Error: 87
+
+The /checkintegrity option is not recognized in this context.
+For more information, refer to the help.
+
+The DISM log file can be found at C:\WINDOWS\Logs\DISM\dism.log
