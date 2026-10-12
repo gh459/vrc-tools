@@ -1,0 +1,2245 @@
+﻿
+========== Capture information ==========
+Captured: 2026-10-12 22:04:25
+User: Administrator
+Session: 1
+
+========== Target processes, full ancestry, and command lines ==========
+
+--- Process: sihost.exe / PID 3776 ---
+
+
+Depth           : 0
+Name            : sihost.exe
+ProcessId       : 3776
+ParentProcessId : 1356
+CreationDate    : 2026/10/12 21:35:02
+ExecutablePath  : C:\WINDOWS\system32\sihost.exe
+CommandLine     : sihost.exe
+
+
+
+
+
+Depth           : 1
+Name            : svchost.exe
+ProcessId       : 1356
+ParentProcessId : 1020
+CreationDate    : 2026/10/12 21:35:00
+ExecutablePath  : C:\WINDOWS\system32\svchost.exe
+CommandLine     : C:\WINDOWS\system32\svchost.exe -k netsvcs -p
+
+
+
+
+
+Depth           : 2
+Name            : services.exe
+ProcessId       : 1020
+ParentProcessId : 864
+CreationDate    : 2026/10/12 21:34:59
+ExecutablePath  : 
+CommandLine     : 
+
+
+
+
+
+Depth           : 3
+Name            : wininit.exe
+ProcessId       : 864
+ParentProcessId : 720
+CreationDate    : 2026/10/12 21:34:59
+ExecutablePath  : 
+CommandLine     : 
+
+
+
+
+--- Process: explorer.exe / PID 524 ---
+
+
+Depth           : 0
+Name            : explorer.exe
+ProcessId       : 524
+ParentProcessId : 3172
+CreationDate    : 2026/10/12 21:35:03
+ExecutablePath  : C:\WINDOWS\Explorer.EXE
+CommandLine     : C:\WINDOWS\Explorer.EXE
+
+
+
+
+--- Process: CrossDeviceResume.exe / PID 3560 ---
+
+
+Depth           : 0
+Name            : CrossDeviceResume.exe
+ProcessId       : 3560
+ParentProcessId : 3776
+CreationDate    : 2026/10/12 21:35:03
+ExecutablePath  : C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\CrossDeviceResume.exe
+CommandLine     : "C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\CrossDeviceResume.exe" /tileid MicrosoftWindows.Client.CBS_cw5n1h2txyewy!CrossDeviceResumeApp
+
+
+
+
+
+Depth           : 1
+Name            : sihost.exe
+ProcessId       : 3776
+ParentProcessId : 1356
+CreationDate    : 2026/10/12 21:35:02
+ExecutablePath  : C:\WINDOWS\system32\sihost.exe
+CommandLine     : sihost.exe
+
+
+
+
+
+Depth           : 2
+Name            : svchost.exe
+ProcessId       : 1356
+ParentProcessId : 1020
+CreationDate    : 2026/10/12 21:35:00
+ExecutablePath  : C:\WINDOWS\system32\svchost.exe
+CommandLine     : C:\WINDOWS\system32\svchost.exe -k netsvcs -p
+
+
+
+
+
+Depth           : 3
+Name            : services.exe
+ProcessId       : 1020
+ParentProcessId : 864
+CreationDate    : 2026/10/12 21:34:59
+ExecutablePath  : 
+CommandLine     : 
+
+
+
+
+
+Depth           : 4
+Name            : wininit.exe
+ProcessId       : 864
+ParentProcessId : 720
+CreationDate    : 2026/10/12 21:34:59
+ExecutablePath  : 
+CommandLine     : 
+
+
+
+
+--- Process: SearchHost.exe / PID 4792 ---
+
+
+Depth           : 0
+Name            : SearchHost.exe
+ProcessId       : 4792
+ParentProcessId : 1044
+CreationDate    : 2026/10/12 21:35:05
+ExecutablePath  : C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\SearchHost.exe
+CommandLine     : "C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\SearchHost.exe" -ServerName:CortanaUI.AppXstmwaab17q5s3y22tp6apqz7a45vwv65.mca
+
+
+
+
+
+Depth           : 1
+Name            : svchost.exe
+ProcessId       : 1044
+ParentProcessId : 1020
+CreationDate    : 2026/10/12 21:35:00
+ExecutablePath  : C:\WINDOWS\system32\svchost.exe
+CommandLine     : C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p
+
+
+
+
+
+Depth           : 2
+Name            : services.exe
+ProcessId       : 1020
+ParentProcessId : 864
+CreationDate    : 2026/10/12 21:34:59
+ExecutablePath  : 
+CommandLine     : 
+
+
+
+
+
+Depth           : 3
+Name            : wininit.exe
+ProcessId       : 864
+ParentProcessId : 720
+CreationDate    : 2026/10/12 21:34:59
+ExecutablePath  : 
+CommandLine     : 
+
+
+
+
+--- Process: RuntimeBroker.exe / PID 4924 ---
+
+
+Depth           : 0
+Name            : RuntimeBroker.exe
+ProcessId       : 4924
+ParentProcessId : 1044
+CreationDate    : 2026/10/12 21:35:05
+ExecutablePath  : C:\Windows\System32\RuntimeBroker.exe
+CommandLine     : C:\Windows\System32\RuntimeBroker.exe -Embedding
+
+
+
+
+
+Depth           : 1
+Name            : svchost.exe
+ProcessId       : 1044
+ParentProcessId : 1020
+CreationDate    : 2026/10/12 21:35:00
+ExecutablePath  : C:\WINDOWS\system32\svchost.exe
+CommandLine     : C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p
+
+
+
+
+
+Depth           : 2
+Name            : services.exe
+ProcessId       : 1020
+ParentProcessId : 864
+CreationDate    : 2026/10/12 21:34:59
+ExecutablePath  : 
+CommandLine     : 
+
+
+
+
+
+Depth           : 3
+Name            : wininit.exe
+ProcessId       : 864
+ParentProcessId : 720
+CreationDate    : 2026/10/12 21:34:59
+ExecutablePath  : 
+CommandLine     : 
+
+
+
+
+========== Specific CrossDeviceResume process details ==========
+
+
+Name            : CrossDeviceResume.exe
+ProcessId       : 3560
+ParentProcessId : 3776
+CreationDate    : 2026/10/12 21:35:03
+ExecutablePath  : C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\CrossDeviceResume.exe
+CommandLine     : "C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\CrossDeviceResume.exe" /tileid MicrosoftWindows.Client.CBS_cw5n1h2txyewy!CrossDeviceResumeApp
+
+
+
+
+========== AppX registrations matching CrossDevice or Client.CBS ==========
+
+
+Name              : MicrosoftWindows.Client.CBS
+PackageFullName   : MicrosoftWindows.Client.CBS_1000.26100.360.0_x64__cw5n1h2txyewy
+PackageFamilyName : MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+InstallLocation   : C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+Status            : Ok
+NonRemovable      : True
+
+
+
+
+========== SystemApps folders matching CrossDevice or Client.CBS ==========
+
+
+FullName      : C:\WINDOWS\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+Name          : MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+CreationTime  : 2024/04/01 16:26:07
+LastWriteTime : 2026/10/12 21:15:55
+
+
+
+
+========== Package manifest declarations containing CrossDeviceResume ==========
+
+--- C:\WINDOWS\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\AppxManifest.xml ---
+Line 416
+        <uap3:Extension Category="windows.appExtension">
+          <uap3:AppExtension Name="com.microsoft.windows.app.accounts" Id="Id" PublicFolder="Public" DisplayName="AccountsService" />
+        </uap3:Extension>
+        <uap:Extension Category="windows.appService" EntryPoint="AccountsService.BackgroundTask.AppServiceContextChanged">
+            <uap3:AppService Name="com.microsoft.accountsservice" />
+        </uap:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.CassUpdateTimer">
+          <BackgroundTasks>
+
+Line 419
+        <uap:Extension Category="windows.appService" EntryPoint="AccountsService.BackgroundTask.AppServiceContextChanged">
+            <uap3:AppService Name="com.microsoft.accountsservice" />
+        </uap:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.CassUpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+
+Line 420
+            <uap3:AppService Name="com.microsoft.accountsservice" />
+        </uap:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.CassUpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.NotificationHandler">
+
+Line 422
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.CassUpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.NotificationHandler">
+          <BackgroundTasks>
+            <Task Type="pushNotification" />      
+
+Line 424
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.NotificationHandler">
+          <BackgroundTasks>
+            <Task Type="pushNotification" />      
+          </BackgroundTasks>
+        </Extension>
+
+Line 425
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.NotificationHandler">
+          <BackgroundTasks>
+            <Task Type="pushNotification" />      
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.OnlineIdChange">
+
+Line 427
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.NotificationHandler">
+          <BackgroundTasks>
+            <Task Type="pushNotification" />      
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.OnlineIdChange">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+
+Line 429
+            <Task Type="pushNotification" />      
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.OnlineIdChange">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+
+Line 430
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.OnlineIdChange">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="AccountsService.BackgroundTask.UpdateTask">
+
+Line 432
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.OnlineIdChange">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="AccountsService.BackgroundTask.UpdateTask">
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.Maintenance">
+
+Line 434
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="AccountsService.BackgroundTask.UpdateTask">
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+
+Line 436
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="AccountsService.BackgroundTask.UpdateTask">
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+
+Line 437
+        <Extension Category="windows.updateTask" EntryPoint="AccountsService.BackgroundTask.UpdateTask">
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.SubscriptionUpdateTimer">
+
+Line 439
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.SubscriptionUpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+
+Line 441
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.SubscriptionUpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+
+Line 442
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.SubscriptionUpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.WnsChannelRefreshTimer">
+
+Line 444
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.SubscriptionUpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.WnsChannelRefreshTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+
+Line 446
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.WnsChannelRefreshTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+
+Line 447
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.WnsChannelRefreshTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="AccountsService.BackgroundTask.Configuration" />
+
+Line 449
+        <Extension Category="windows.backgroundTasks" EntryPoint="AccountsService.BackgroundTask.WnsChannelRefreshTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="AccountsService.BackgroundTask.Configuration" />
+      </Extensions>
+    </Application>
+
+Line 451
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="AccountsService.BackgroundTask.Configuration" />
+      </Extensions>
+    </Application>
+        <Application Id="ActionRuntime" Executable="AppActions.exe" EntryPoint="Windows.FullTrustApplication">
+            <uap:VisualElements DisplayName="ms-resource:ActionFX/Resources/AppDisplayName" Description="ms-resource:ActionFX/Resources/AppDescription" BackgroundColor="transparent" Square150x150Logo="ActionFXRuntime\Assets\Square150x150Logo.png" Square44x44Logo="ActionFXRuntime\Assets\Square44x44Logo.png" AppListEntry="none" />
+
+Line 467
+                        </com3:ExeServer>
+                    </com2:ComServer>
+                </com2:Extension>
+                <uap5:Extension Category="windows.appExecutionAlias" xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5">
+                    <uap5:AppExecutionAlias>
+                        <uap5:ExecutionAlias Alias="ActionsMcpHost.exe" />
+
+                    </uap5:AppExecutionAlias>
+
+Line 472
+                        <uap5:ExecutionAlias Alias="ActionsMcpHost.exe" />
+
+                    </uap5:AppExecutionAlias>
+                </uap5:Extension>
+            </Extensions>
+        </Application>
+        <Application Id="Global.ActionUI" StartPage="http://microsoft.com">
+            <uap:VisualElements DisplayName="Global.ActionUI" Description="Global.ActionUI" Square150x150Logo="Assets\ActionResponse.png" Square44x44Logo="Assets\ActionResponse.png" BackgroundColor="transparent" AppListEntry="none" />
+
+Line 611
+                </uap3:Extension>
+            </Extensions>
+        </Application>
+        <Application Id="CrossDeviceResumeApp" Executable="CrossDeviceResume.exe" EntryPoint="Windows.FullTrustApplication">
+            <uap:VisualElements DisplayName="ms-resource:CrossDeviceResume/Resources/AppDisplayName" Description="ms-resource:CrossDeviceResume/Resources/AppDescription" Square150x150Logo="CrossDeviceResume\Assets\Square150x150Logo.png" Square44x44Logo="CrossDeviceResume\Assets\Square44x44Logo.png" BackgroundColor="transparent" AppListEntry="none" />
+            <Extensions>
+                <uap3:Extension Category="windows.appExtension">
+                    <uap3:AppExtension Name="com.microsoft.windows.extensionpackage" Id="CrossDeviceResume" DisplayName="Extension Metadata">
+
+Line 612
+            </Extensions>
+        </Application>
+        <Application Id="CrossDeviceResumeApp" Executable="CrossDeviceResume.exe" EntryPoint="Windows.FullTrustApplication">
+            <uap:VisualElements DisplayName="ms-resource:CrossDeviceResume/Resources/AppDisplayName" Description="ms-resource:CrossDeviceResume/Resources/AppDescription" Square150x150Logo="CrossDeviceResume\Assets\Square150x150Logo.png" Square44x44Logo="CrossDeviceResume\Assets\Square44x44Logo.png" BackgroundColor="transparent" AppListEntry="none" />
+            <Extensions>
+                <uap3:Extension Category="windows.appExtension">
+                    <uap3:AppExtension Name="com.microsoft.windows.extensionpackage" Id="CrossDeviceResume" DisplayName="Extension Metadata">
+                        <uap3:Properties>
+
+Line 615
+            <uap:VisualElements DisplayName="ms-resource:CrossDeviceResume/Resources/AppDisplayName" Description="ms-resource:CrossDeviceResume/Resources/AppDescription" Square150x150Logo="CrossDeviceResume\Assets\Square150x150Logo.png" Square44x44Logo="CrossDeviceResume\Assets\Square44x44Logo.png" BackgroundColor="transparent" AppListEntry="none" />
+            <Extensions>
+                <uap3:Extension Category="windows.appExtension">
+                    <uap3:AppExtension Name="com.microsoft.windows.extensionpackage" Id="CrossDeviceResume" DisplayName="Extension Metadata">
+                        <uap3:Properties>
+                            <PackageAliases>
+                                <PackageAlias>CrossDeviceResumeAlias</PackageAlias>
+                                <PackageAlias>CrossDeviceResumeTaskbarExtensionsUXAlias</PackageAlias>
+
+Line 618
+                    <uap3:AppExtension Name="com.microsoft.windows.extensionpackage" Id="CrossDeviceResume" DisplayName="Extension Metadata">
+                        <uap3:Properties>
+                            <PackageAliases>
+                                <PackageAlias>CrossDeviceResumeAlias</PackageAlias>
+                                <PackageAlias>CrossDeviceResumeTaskbarExtensionsUXAlias</PackageAlias>
+                            </PackageAliases>
+                        </uap3:Properties>
+                    </uap3:AppExtension>
+
+Line 619
+                        <uap3:Properties>
+                            <PackageAliases>
+                                <PackageAlias>CrossDeviceResumeAlias</PackageAlias>
+                                <PackageAlias>CrossDeviceResumeTaskbarExtensionsUXAlias</PackageAlias>
+                            </PackageAliases>
+                        </uap3:Properties>
+                    </uap3:AppExtension>
+                </uap3:Extension>
+
+Line 625
+                    </uap3:AppExtension>
+                </uap3:Extension>
+                <uap3:Extension Category="windows.appExtension">
+                    <uap3:AppExtension Name="com.microsoft.windows.extension.crossdeviceresume" Id="CrossDeviceResume" DisplayName="Microsoft Windows Extensions">
+                    </uap3:AppExtension>
+                </uap3:Extension>
+                <uap3:Extension Category="windows.appExtension">
+                    <uap3:AppExtension Name="com.microsoft.windows.extension.crossdeviceresumeevents" Id="CrossDeviceResumeListener" DisplayName="Microsoft Windows Extensions">
+
+Line 629
+                    </uap3:AppExtension>
+                </uap3:Extension>
+                <uap3:Extension Category="windows.appExtension">
+                    <uap3:AppExtension Name="com.microsoft.windows.extension.crossdeviceresumeevents" Id="CrossDeviceResumeListener" DisplayName="Microsoft Windows Extensions">
+                        <uap3:Properties>
+                            <Classes>
+                                <XDRListener>CrossDeviceResume.XDRListener</XDRListener>
+                            </Classes>
+
+Line 632
+                    <uap3:AppExtension Name="com.microsoft.windows.extension.crossdeviceresumeevents" Id="CrossDeviceResumeListener" DisplayName="Microsoft Windows Extensions">
+                        <uap3:Properties>
+                            <Classes>
+                                <XDRListener>CrossDeviceResume.XDRListener</XDRListener>
+                            </Classes>
+                        </uap3:Properties>
+                    </uap3:AppExtension>
+                </uap3:Extension>
+
+Line 638
+                    </uap3:AppExtension>
+                </uap3:Extension>
+                <uap3:Extension Category="windows.appExtension">
+                    <uap3:AppExtension Name="com.microsoft.windows.extension.shellhost.component" Id="CrossDeviceResumeService" DisplayName="Microsoft Windows Extensions">
+                        <uap3:Properties>
+                            <UXFrameComponentDefinition>
+                                <ExtensionCategory>com.microsoft.windows.extension.crossdeviceresumeevents</ExtensionCategory>
+                                <ExtensionId>XDRListener</ExtensionId>
+
+Line 641
+                    <uap3:AppExtension Name="com.microsoft.windows.extension.shellhost.component" Id="CrossDeviceResumeService" DisplayName="Microsoft Windows Extensions">
+                        <uap3:Properties>
+                            <UXFrameComponentDefinition>
+                                <ExtensionCategory>com.microsoft.windows.extension.crossdeviceresumeevents</ExtensionCategory>
+                                <ExtensionId>XDRListener</ExtensionId>
+                                <InvocationProperties>
+                                    <SingleInstance>true</SingleInstance>
+                                    <ShellUIHostName>CrossDeviceResumeService</ShellUIHostName>
+
+Line 645
+                                <ExtensionId>XDRListener</ExtensionId>
+                                <InvocationProperties>
+                                    <SingleInstance>true</SingleInstance>
+                                    <ShellUIHostName>CrossDeviceResumeService</ShellUIHostName>
+                                </InvocationProperties>
+                            </UXFrameComponentDefinition>
+                        </uap3:Properties>
+                    </uap3:AppExtension>
+
+Line 652
+                    </uap3:AppExtension>
+                </uap3:Extension>
+                <uap3:Extension Category="windows.appExtension">
+                    <uap3:AppExtension Name="com.microsoft.windows.extension.shelluihost" Id="CrossDeviceResumeHost" PublicFolder="Public" DisplayName="CrossDeviceResumeHost">
+                        <uap3:Properties>
+                            <LaunchPolicy>1</LaunchPolicy>
+                            <LogonPolicy>0</LogonPolicy>
+                            <LaunchTimeoutPolicy>1</LaunchTimeoutPolicy>
+
+Line 658
+                            <LogonPolicy>0</LogonPolicy>
+                            <LaunchTimeoutPolicy>1</LaunchTimeoutPolicy>
+                            <MdmPolicyArea>Connectivity</MdmPolicyArea>
+                            <MdmPolicyName>DisableCrossDeviceResume</MdmPolicyName>
+                            <MdmPolicyEnabledBehavior>0</MdmPolicyEnabledBehavior>
+                            <DisableOnSKUCategories>3</DisableOnSKUCategories>
+                            <ConfigVelocityDisableFeatureId>62080118</ConfigVelocityDisableFeatureId>
+                        </uap3:Properties>
+
+Line 666
+                    </uap3:AppExtension>
+                </uap3:Extension>
+                <uap3:Extension Category="windows.appExtension">
+                    <uap3:AppExtension Name="com.microsoft.windows.extension.shelluihost" Id="CrossDeviceResumeService" PublicFolder="Public" DisplayName="CrossDeviceResumeServiceHost">
+                        <uap3:Properties>
+                            <ProcessPath>%SYSTEMROOT%\system32\shellhost.exe</ProcessPath>
+                            <CommandLineArgs>LoadComponent CrossDeviceResumeService --boolProperties loadFullComponent true</CommandLineArgs>
+                            <LaunchPolicy>1</LaunchPolicy>
+
+Line 669
+                    <uap3:AppExtension Name="com.microsoft.windows.extension.shelluihost" Id="CrossDeviceResumeService" PublicFolder="Public" DisplayName="CrossDeviceResumeServiceHost">
+                        <uap3:Properties>
+                            <ProcessPath>%SYSTEMROOT%\system32\shellhost.exe</ProcessPath>
+                            <CommandLineArgs>LoadComponent CrossDeviceResumeService --boolProperties loadFullComponent true</CommandLineArgs>
+                            <LaunchPolicy>1</LaunchPolicy>
+                            <LogonPolicy>0</LogonPolicy>
+                            <ConfigVelocityFeatureId>62080118</ConfigVelocityFeatureId>
+                        </uap3:Properties>
+
+Line 681
+                        <uap3:Properties>
+                            <VelocityId>62672833</VelocityId>
+                            <Classes>
+                                <Microsoft.Windows.Taskbar.TaskbarXamlExtension>CrossDeviceResume.ShellExt.XdrTaskbarExtension</Microsoft.Windows.Taskbar.TaskbarXamlExtension>
+                            </Classes>
+                            <MetadataProviders>
+                                <Provider>CrossDeviceResume.ShellExt.XamlMetaDataProvider</Provider>
+                            </MetadataProviders>
+
+Line 684
+                                <Microsoft.Windows.Taskbar.TaskbarXamlExtension>CrossDeviceResume.ShellExt.XdrTaskbarExtension</Microsoft.Windows.Taskbar.TaskbarXamlExtension>
+                            </Classes>
+                            <MetadataProviders>
+                                <Provider>CrossDeviceResume.ShellExt.XamlMetaDataProvider</Provider>
+                            </MetadataProviders>
+                            <ResourceDictionaries>
+                                <ResourceDictionary>CrossDeviceResume.ShellExt.XdrTaskbarExtensionResources</ResourceDictionary>
+                            </ResourceDictionaries>
+
+Line 687
+                                <Provider>CrossDeviceResume.ShellExt.XamlMetaDataProvider</Provider>
+                            </MetadataProviders>
+                            <ResourceDictionaries>
+                                <ResourceDictionary>CrossDeviceResume.ShellExt.XdrTaskbarExtensionResources</ResourceDictionary>
+                            </ResourceDictionaries>
+                        </uap3:Properties>
+                    </uap3:AppExtension>
+                </uap3:Extension>
+
+Line 735
+                </uap3:Properties>
+            </uap3:AppExtension>
+        </uap3:Extension>
+        <uap:Extension Category="windows.appService" EntryPoint="DesktopSpotlight.BackgroundTask.AppService">
+            <uap3:AppService Name="com.microsoft.desktopspotlight" />
+        </uap:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.UpdateTimer">
+          <BackgroundTasks>
+
+Line 738
+        <uap:Extension Category="windows.appService" EntryPoint="DesktopSpotlight.BackgroundTask.AppService">
+            <uap3:AppService Name="com.microsoft.desktopspotlight" />
+        </uap:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.UpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+
+Line 739
+            <uap3:AppService Name="com.microsoft.desktopspotlight" />
+        </uap:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.UpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.RegistrationStatusCheck">
+
+Line 741
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.UpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.RegistrationStatusCheck">
+          <BackgroundTasks>
+              <Task Type="systemEvent" />     
+
+Line 743
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.RegistrationStatusCheck">
+          <BackgroundTasks>
+              <Task Type="systemEvent" />     
+          </BackgroundTasks>
+        </Extension>
+
+Line 744
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.RegistrationStatusCheck">
+          <BackgroundTasks>
+              <Task Type="systemEvent" />     
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.OnlineIdChange">
+
+Line 746
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.RegistrationStatusCheck">
+          <BackgroundTasks>
+              <Task Type="systemEvent" />     
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.OnlineIdChange">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+
+Line 748
+              <Task Type="systemEvent" />     
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.OnlineIdChange">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+
+Line 749
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.OnlineIdChange">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.Maintenance">
+
+Line 751
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.OnlineIdChange">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />       
+
+Line 753
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />       
+          </BackgroundTasks>
+        </Extension>
+
+Line 754
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />       
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="DesktopSpotlight.BackgroundTask.UpdateTask" />
+
+Line 756
+        <Extension Category="windows.backgroundTasks" EntryPoint="DesktopSpotlight.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />       
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="DesktopSpotlight.BackgroundTask.UpdateTask" />
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="DesktopSpotlight.BackgroundTask.Configuration" />
+      </Extensions>
+
+Line 758
+            <Task Type="systemEvent" />       
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="DesktopSpotlight.BackgroundTask.UpdateTask" />
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="DesktopSpotlight.BackgroundTask.Configuration" />
+      </Extensions>
+    </Application>
+        <Application Id="Global.DesktopStickerEditor" StartPage="http://microsoft.com">
+
+Line 759
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="DesktopSpotlight.BackgroundTask.UpdateTask" />
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="DesktopSpotlight.BackgroundTask.Configuration" />
+      </Extensions>
+    </Application>
+        <Application Id="Global.DesktopStickerEditor" StartPage="http://microsoft.com">
+            <uap:VisualElements DisplayName="Global.DesktopStickerEditor" Description="Global.DesktopStickerEditor" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" BackgroundColor="transparent" AppListEntry="none" />
+
+Line 798
+          <uap:Protocol Name="ms-stickereditor">
+          </uap:Protocol>
+        </uap:Extension>
+          <uap5:Extension Category="windows.appExecutionAlias" Executable="DesktopStickerEditorWin32Exe\DesktopStickerEditorWin32Exe.exe" EntryPoint="Windows.FullTrustApplication" xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5">
+              <uap5:AppExecutionAlias>
+                  <uap5:ExecutionAlias Alias="MicrosoftWindows.DesktopStickerEditorCentennial.exe" />
+              </uap5:AppExecutionAlias>
+          </uap5:Extension>
+
+Line 802
+              <uap5:AppExecutionAlias>
+                  <uap5:ExecutionAlias Alias="MicrosoftWindows.DesktopStickerEditorCentennial.exe" />
+              </uap5:AppExecutionAlias>
+          </uap5:Extension>
+      </Extensions>
+    </Application>
+        <Application Id="DiscoveryHub" Executable="DiscoveryHubApp.exe" EntryPoint="Windows.FullTrustApplication">
+            <uap:VisualElements DisplayName="ms-resource:DiscoveryHub/Resources/AppDisplayName" Description="ms-resource:DiscoveryHub/Resources/AppDescription" BackgroundColor="transparent" Square150x150Logo="DiscoveryHub\Assets\Square150x150Logo.png" Square44x44Logo="DiscoveryHub\Assets\Square44x44Logo.png" AppListEntry="none">
+
+Line 1019
+            </uap3:Properties>
+          </uap3:AppExtension>
+        </uap3:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.UpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+
+Line 1020
+          </uap3:AppExtension>
+        </uap3:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.UpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.OnlineIdChange">
+
+Line 1022
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.UpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.OnlineIdChange">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+
+Line 1024
+            <Task Type="timer" />                 
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.OnlineIdChange">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+
+Line 1025
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.OnlineIdChange">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.Maintenance">
+
+Line 1027
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.OnlineIdChange">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />       
+
+Line 1029
+            <Task Type="systemEvent" />           
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />       
+          </BackgroundTasks>
+        </Extension>
+
+Line 1030
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />       
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.WnsChannelRefreshTimer">
+
+Line 1032
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />       
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.WnsChannelRefreshTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />             
+
+Line 1034
+            <Task Type="systemEvent" />       
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.WnsChannelRefreshTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />             
+          </BackgroundTasks>
+        </Extension>
+
+Line 1035
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.WnsChannelRefreshTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />             
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.NotificationLostTimer">
+
+Line 1037
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.WnsChannelRefreshTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />             
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.NotificationLostTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />             
+
+Line 1039
+            <Task Type="timer" />             
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.NotificationLostTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />             
+          </BackgroundTasks>
+        </Extension>
+
+Line 1040
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.NotificationLostTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />             
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.OnlineIdChangeLostTimer">
+
+Line 1042
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.NotificationLostTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />             
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.OnlineIdChangeLostTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />             
+
+Line 1044
+            <Task Type="timer" />             
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.OnlineIdChangeLostTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />             
+          </BackgroundTasks>
+        </Extension>
+
+Line 1045
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.OnlineIdChangeLostTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />             
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.NotificationHandler">
+
+Line 1047
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.OnlineIdChangeLostTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />             
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.NotificationHandler">
+          <BackgroundTasks>
+            <Task Type="pushNotification" />    
+
+Line 1049
+            <Task Type="timer" />             
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.NotificationHandler">
+          <BackgroundTasks>
+            <Task Type="pushNotification" />    
+          </BackgroundTasks>
+        </Extension>
+
+Line 1050
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.NotificationHandler">
+          <BackgroundTasks>
+            <Task Type="pushNotification" />    
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="IrisService.BackgroundTask.UpdateTask" />
+
+Line 1052
+        <Extension Category="windows.backgroundTasks" EntryPoint="IrisService.BackgroundTask.NotificationHandler">
+          <BackgroundTasks>
+            <Task Type="pushNotification" />    
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="IrisService.BackgroundTask.UpdateTask" />
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="IrisService.BackgroundTask.Configuration" />
+      </Extensions>
+
+Line 1054
+            <Task Type="pushNotification" />    
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="IrisService.BackgroundTask.UpdateTask" />
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="IrisService.BackgroundTask.Configuration" />
+      </Extensions>
+    </Application>
+        <Application Id="Global.PeopleExperiencePlatform" StartPage="http://microsoft.com">
+
+Line 1055
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="IrisService.BackgroundTask.UpdateTask" />
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="IrisService.BackgroundTask.Configuration" />
+      </Extensions>
+    </Application>
+        <Application Id="Global.PeopleExperiencePlatform" StartPage="http://microsoft.com">
+            <uap:VisualElements DisplayName="Global.PeopleExperiencePlatform" Description="Global.PeopleExperiencePlatform" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" BackgroundColor="transparent" AppListEntry="none" />
+
+Line 1288
+          <uap3:Extension Category="windows.appExtension">
+              <uap3:AppExtension Name="com.microsoft.windows.app.microsoftaccountengagementcoordinator" Id="Id" PublicFolder="Public" DisplayName="RulesEngine" />
+          </uap3:Extension>
+          <uap:Extension Category="windows.appService" EntryPoint="RulesEngine.BackgroundTask.RulesEngineContextChanged">
+            <uap3:AppService Name="com.microsoft.rulesengine" />
+        </uap:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.UpdateTimer">
+            <BackgroundTasks>
+
+Line 1291
+          <uap:Extension Category="windows.appService" EntryPoint="RulesEngine.BackgroundTask.RulesEngineContextChanged">
+            <uap3:AppService Name="com.microsoft.rulesengine" />
+        </uap:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.UpdateTimer">
+            <BackgroundTasks>
+                <Task Type="timer" />
+            </BackgroundTasks>
+        </Extension>
+
+Line 1292
+            <uap3:AppService Name="com.microsoft.rulesengine" />
+        </uap:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.UpdateTimer">
+            <BackgroundTasks>
+                <Task Type="timer" />
+            </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.OnlineIdChange">
+
+Line 1294
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.UpdateTimer">
+            <BackgroundTasks>
+                <Task Type="timer" />
+            </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.OnlineIdChange">
+            <BackgroundTasks>
+                <Task Type="systemEvent" />
+
+Line 1296
+                <Task Type="timer" />
+            </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.OnlineIdChange">
+            <BackgroundTasks>
+                <Task Type="systemEvent" />
+            </BackgroundTasks>
+        </Extension>
+
+Line 1297
+            </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.OnlineIdChange">
+            <BackgroundTasks>
+                <Task Type="systemEvent" />
+            </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.Maintenance">
+
+Line 1299
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.OnlineIdChange">
+            <BackgroundTasks>
+                <Task Type="systemEvent" />
+            </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.Maintenance">
+            <BackgroundTasks>
+                <Task Type="systemEvent" />
+
+Line 1301
+                <Task Type="systemEvent" />
+            </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.Maintenance">
+            <BackgroundTasks>
+                <Task Type="systemEvent" />
+            </BackgroundTasks>
+        </Extension>
+
+Line 1302
+            </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.Maintenance">
+            <BackgroundTasks>
+                <Task Type="systemEvent" />
+            </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="RulesEngine.BackgroundTask.UpdateTask" />
+
+Line 1304
+        <Extension Category="windows.backgroundTasks" EntryPoint="RulesEngine.BackgroundTask.Maintenance">
+            <BackgroundTasks>
+                <Task Type="systemEvent" />
+            </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="RulesEngine.BackgroundTask.UpdateTask" />
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="RulesEngine.BackgroundTask.Configuration" />
+      </Extensions>
+
+Line 1306
+                <Task Type="systemEvent" />
+            </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="RulesEngine.BackgroundTask.UpdateTask" />
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="RulesEngine.BackgroundTask.Configuration" />
+      </Extensions>
+    </Application>
+        <Application Id="CortanaUI" Executable="SearchHost.exe" EntryPoint="CortanaUI.App">
+
+Line 1307
+            </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="RulesEngine.BackgroundTask.UpdateTask" />
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="RulesEngine.BackgroundTask.Configuration" />
+      </Extensions>
+    </Application>
+        <Application Id="CortanaUI" Executable="SearchHost.exe" EntryPoint="CortanaUI.App">
+            <uap:VisualElements DisplayName="ms-resource:Cortana.UI/Resources/TileDisplayName" AppListEntry="none" Square150x150Logo="Cortana.UI\Assets\App\Square150x150Logo.png" Square44x44Logo="Cortana.UI\Assets\App\Square44x44Logo.png" Description="ms-resource:Cortana.UI/Resources/Description" BackgroundColor="transparent">
+
+Line 1353
+                <uap3:Extension Category="windows.appExtension">
+                    <uap3:AppExtension Name="com.microsoft.windows.app.search" Id="SearchAppContractPresent" PublicFolder="Public" DisplayName="SearchApp Contact" />
+                </uap3:Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="Cortana.Internal.Search.DynamicSearchBoxRefresherBackgroundTask">
+                    <BackgroundTasks>
+                        <Task Type="timer" />
+                        <Task Type="systemEvent" />
+                    </BackgroundTasks>
+
+Line 1354
+                    <uap3:AppExtension Name="com.microsoft.windows.app.search" Id="SearchAppContractPresent" PublicFolder="Public" DisplayName="SearchApp Contact" />
+                </uap3:Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="Cortana.Internal.Search.DynamicSearchBoxRefresherBackgroundTask">
+                    <BackgroundTasks>
+                        <Task Type="timer" />
+                        <Task Type="systemEvent" />
+                    </BackgroundTasks>
+                </Extension>
+
+Line 1357
+                    <BackgroundTasks>
+                        <Task Type="timer" />
+                        <Task Type="systemEvent" />
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="Cortana.Internal.Search.AppsAndSettingsIndexRefreshTask">
+                   <BackgroundTasks>
+                       <Task Type="timer" />
+
+Line 1359
+                        <Task Type="systemEvent" />
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="Cortana.Internal.Search.AppsAndSettingsIndexRefreshTask">
+                   <BackgroundTasks>
+                       <Task Type="timer" />
+                   </BackgroundTasks>
+                </Extension>
+
+Line 1360
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="Cortana.Internal.Search.AppsAndSettingsIndexRefreshTask">
+                   <BackgroundTasks>
+                       <Task Type="timer" />
+                   </BackgroundTasks>
+                </Extension>
+            </Extensions>
+
+Line 1362
+                <Extension Category="windows.backgroundTasks" EntryPoint="Cortana.Internal.Search.AppsAndSettingsIndexRefreshTask">
+                   <BackgroundTasks>
+                       <Task Type="timer" />
+                   </BackgroundTasks>
+                </Extension>
+            </Extensions>
+        </Application>
+        <Application Id="CortanaUIFullTrustApp" Executable="SearchHost.exe" EntryPoint="CortanaUI.App" uap10:TrustLevel="mediumIL" uap10:RuntimeBehavior="windowsApp">
+
+Line 1400
+                    <uap3:AppExtension Name="com.microsoft.windows.app.searchMI" Id="SearchAppContractPresent" PublicFolder="Public" DisplayName="SearchApp Contact" />
+                </uap3:Extension>
+
+                <Extension Category="windows.backgroundTasks" EntryPoint="Cortana.Internal.Search.DynamicSearchBoxRefresherBackgroundTask">
+                    <BackgroundTasks>
+                        <Task Type="timer" />
+                        <Task Type="systemEvent" />
+                    </BackgroundTasks>
+
+Line 1401
+                </uap3:Extension>
+
+                <Extension Category="windows.backgroundTasks" EntryPoint="Cortana.Internal.Search.DynamicSearchBoxRefresherBackgroundTask">
+                    <BackgroundTasks>
+                        <Task Type="timer" />
+                        <Task Type="systemEvent" />
+                    </BackgroundTasks>
+                </Extension>
+
+Line 1404
+                    <BackgroundTasks>
+                        <Task Type="timer" />
+                        <Task Type="systemEvent" />
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="Cortana.Internal.Search.AppsAndSettingsIndexRefreshTask">
+                   <BackgroundTasks>
+                       <Task Type="timer" />
+
+Line 1406
+                        <Task Type="systemEvent" />
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="Cortana.Internal.Search.AppsAndSettingsIndexRefreshTask">
+                   <BackgroundTasks>
+                       <Task Type="timer" />
+                   </BackgroundTasks>
+                </Extension>
+
+Line 1407
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="Cortana.Internal.Search.AppsAndSettingsIndexRefreshTask">
+                   <BackgroundTasks>
+                       <Task Type="timer" />
+                   </BackgroundTasks>
+                </Extension>
+            </Extensions>
+
+Line 1409
+                <Extension Category="windows.backgroundTasks" EntryPoint="Cortana.Internal.Search.AppsAndSettingsIndexRefreshTask">
+                   <BackgroundTasks>
+                       <Task Type="timer" />
+                   </BackgroundTasks>
+                </Extension>
+            </Extensions>
+        </Application>
+        <Application Id="FESearchUI" Executable="FESearchHost.exe" EntryPoint="CortanaUI.App">
+
+Line 1447
+            </com3:ExeServer>
+          </com2:ComServer>
+        </com2:Extension>
+        <desktop:Extension Category="windows.toastNotificationActivation" xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10">
+          <desktop:ToastNotificationActivation ToastActivatorCLSID="8D1E39AA-7B52-474A-BF6E-7C8D1F0F2A41" />
+        </desktop:Extension>
+         <uap3:Extension Category="windows.appExtension">
+             <uap3:AppExtension Name="com.microsoft.windows.extension.softlanding" Id="SoftLandingExtension" DisplayName="SL Package Extension">
+
+Line 1449
+        </com2:Extension>
+        <desktop:Extension Category="windows.toastNotificationActivation" xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10">
+          <desktop:ToastNotificationActivation ToastActivatorCLSID="8D1E39AA-7B52-474A-BF6E-7C8D1F0F2A41" />
+        </desktop:Extension>
+         <uap3:Extension Category="windows.appExtension">
+             <uap3:AppExtension Name="com.microsoft.windows.extension.softlanding" Id="SoftLandingExtension" DisplayName="SL Package Extension">
+                 <uap3:Properties>
+                     <ComClassId>A7451292-7906-414C-BB7B-DFD32C749E5C</ComClassId>
+
+Line 1632
+        <uap:Extension Category="windows.appService" EntryPoint="WebExperienceHost.AppServiceTask">
+          <uap:AppService Name="WebExperienceHost.AppService" />
+        </uap:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="WebExperienceHost.BackgroundTask.UpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />
+          </BackgroundTasks>
+        </Extension>
+
+Line 1633
+          <uap:AppService Name="WebExperienceHost.AppService" />
+        </uap:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="WebExperienceHost.BackgroundTask.UpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="WebExperienceHost.BackgroundTask.Maintenance">
+
+Line 1635
+        <Extension Category="windows.backgroundTasks" EntryPoint="WebExperienceHost.BackgroundTask.UpdateTimer">
+          <BackgroundTasks>
+            <Task Type="timer" />
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="WebExperienceHost.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />
+
+Line 1637
+            <Task Type="timer" />
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="WebExperienceHost.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />
+          </BackgroundTasks>
+        </Extension>
+
+Line 1638
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="WebExperienceHost.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="WebExperienceHost.BackgroundTask.UpdateTask" />
+
+Line 1640
+        <Extension Category="windows.backgroundTasks" EntryPoint="WebExperienceHost.BackgroundTask.Maintenance">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="WebExperienceHost.BackgroundTask.UpdateTask" />
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="WebExperienceHost.BackgroundTask.Configuration" />
+      </Extensions>
+
+Line 1642
+            <Task Type="systemEvent" />
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="WebExperienceHost.BackgroundTask.UpdateTask" />
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="WebExperienceHost.BackgroundTask.Configuration" />
+      </Extensions>
+      <uap:ApplicationContentUriRules>
+        <uap:Rule Type="include" Match="https://prod.rewardsplatform.microsoft.com/" />
+
+Line 1643
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.updateTask" EntryPoint="WebExperienceHost.BackgroundTask.UpdateTask" />
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="WebExperienceHost.BackgroundTask.Configuration" />
+      </Extensions>
+      <uap:ApplicationContentUriRules>
+        <uap:Rule Type="include" Match="https://prod.rewardsplatform.microsoft.com/" />
+        <uap:Rule Type="include" Match="https://www.microsoft.com/officeoobe/" WindowsRuntimeAccess="all" />
+
+Line 1862
+                        </uap3:Properties>
+                    </uap3:AppExtension>
+                </uap3:Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="WindowsBackup.BackupNotificationTask" uap10:TrustLevel="mediumIL">
+                    <BackgroundTasks>
+                        <Task Type="systemEvent" />
+                        <Task Type="timer" />
+                        <Task Type="pushNotification" />
+
+Line 1863
+                    </uap3:AppExtension>
+                </uap3:Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="WindowsBackup.BackupNotificationTask" uap10:TrustLevel="mediumIL">
+                    <BackgroundTasks>
+                        <Task Type="systemEvent" />
+                        <Task Type="timer" />
+                        <Task Type="pushNotification" />
+                    </BackgroundTasks>
+
+Line 1867
+                        <Task Type="systemEvent" />
+                        <Task Type="timer" />
+                        <Task Type="pushNotification" />
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="WindowsBackup.DynamicStringTask" uap10:TrustLevel="mediumIL">
+                    <BackgroundTasks>
+                        <Task Type="systemEvent" />
+
+Line 1869
+                        <Task Type="pushNotification" />
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="WindowsBackup.DynamicStringTask" uap10:TrustLevel="mediumIL">
+                    <BackgroundTasks>
+                        <Task Type="systemEvent" />
+                        <Task Type="timer" />
+                    </BackgroundTasks>
+
+Line 1870
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="WindowsBackup.DynamicStringTask" uap10:TrustLevel="mediumIL">
+                    <BackgroundTasks>
+                        <Task Type="systemEvent" />
+                        <Task Type="timer" />
+                    </BackgroundTasks>
+                </Extension>
+
+Line 1873
+                    <BackgroundTasks>
+                        <Task Type="systemEvent" />
+                        <Task Type="timer" />
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.updateTask" EntryPoint="WindowsBackup.BackupNotificationUpdateTask" />
+                <Extension Category="windows.preInstalledConfigTask" EntryPoint="WindowsBackup.BackupNotificationUpdateTask" />
+                <uap3:Extension Category="windows.appExtension">
+
+Line 1983
+                        </uap3:Properties>
+                    </uap3:AppExtension>
+                </uap3:Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="wsw.BackgroundTask.CalculateBatteryCapacityTask">
+                    <BackgroundTasks>
+                        <Task Type="timer" />
+                    </BackgroundTasks>
+                </Extension>
+
+Line 1984
+                    </uap3:AppExtension>
+                </uap3:Extension>
+                <Extension Category="windows.backgroundTasks" EntryPoint="wsw.BackgroundTask.CalculateBatteryCapacityTask">
+                    <BackgroundTasks>
+                        <Task Type="timer" />
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.updateTask" EntryPoint="wsw.BackgroundTask.UpdateTask" />
+
+Line 1986
+                <Extension Category="windows.backgroundTasks" EntryPoint="wsw.BackgroundTask.CalculateBatteryCapacityTask">
+                    <BackgroundTasks>
+                        <Task Type="timer" />
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.updateTask" EntryPoint="wsw.BackgroundTask.UpdateTask" />
+                <Extension Category="windows.preInstalledConfigTask" EntryPoint="wsw.BackgroundTask.Configuration" />
+            </Extensions>
+
+Line 1988
+                        <Task Type="timer" />
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.updateTask" EntryPoint="wsw.BackgroundTask.UpdateTask" />
+                <Extension Category="windows.preInstalledConfigTask" EntryPoint="wsw.BackgroundTask.Configuration" />
+            </Extensions>
+        </Application>
+    </Applications>
+
+Line 1989
+                    </BackgroundTasks>
+                </Extension>
+                <Extension Category="windows.updateTask" EntryPoint="wsw.BackgroundTask.UpdateTask" />
+                <Extension Category="windows.preInstalledConfigTask" EntryPoint="wsw.BackgroundTask.Configuration" />
+            </Extensions>
+        </Application>
+    </Applications>
+    <Capabilities>
+
+Line 2155
+      <InProcessServer>
+        <Path>AccountsService.dll</Path>
+        <ActivatableClass ActivatableClassId="AccountsService.AccountsServiceProvider" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.CassUpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+
+Line 2156
+        <Path>AccountsService.dll</Path>
+        <ActivatableClass ActivatableClassId="AccountsService.AccountsServiceProvider" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.CassUpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Maintenance" ThreadingModel="both" />
+
+Line 2157
+        <ActivatableClass ActivatableClassId="AccountsService.AccountsServiceProvider" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.CassUpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.SubscriptionUpdateTimer" ThreadingModel="both" />
+
+Line 2158
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.CassUpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.SubscriptionUpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+
+Line 2159
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.SubscriptionUpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChanged" ThreadingModel="both" />
+
+Line 2160
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.SubscriptionUpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChangedInternal" ThreadingModel="both" />
+
+Line 2161
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.SubscriptionUpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChangedInternal" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTaskManager" ThreadingModel="both" />
+
+Line 2162
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.SubscriptionUpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChangedInternal" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.CassHttp" ThreadingModel="both" />
+
+Line 2163
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.SubscriptionUpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChangedInternal" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.CassHttp" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.CassProtocolService" ThreadingModel="both" />
+
+Line 2164
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.SubscriptionUpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChangedInternal" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.CassHttp" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.CassProtocolService" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.StateManager" ThreadingModel="both" />
+
+Line 2165
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTask.AppServiceContextChangedInternal" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.CassHttp" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.CassProtocolService" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.StateManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AccountsService.NotificationService" ThreadingModel="both" />
+
+Line 2529
+                </uap17:Extension>
+        <Extension Category="windows.activatableClass.inProcessServer">
+            <InProcessServer>
+                <Path>CrossDeviceResumeView.dll</Path>
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.XamlMetaDataProvider" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.CrossDeviceResumeResources" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.CrossDeviceResumeControl" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.XDRListener" ThreadingModel="both" />
+
+Line 2530
+        <Extension Category="windows.activatableClass.inProcessServer">
+            <InProcessServer>
+                <Path>CrossDeviceResumeView.dll</Path>
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.XamlMetaDataProvider" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.CrossDeviceResumeResources" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.CrossDeviceResumeControl" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.XDRListener" ThreadingModel="both" />
+            </InProcessServer>
+
+Line 2531
+            <InProcessServer>
+                <Path>CrossDeviceResumeView.dll</Path>
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.XamlMetaDataProvider" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.CrossDeviceResumeResources" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.CrossDeviceResumeControl" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.XDRListener" ThreadingModel="both" />
+            </InProcessServer>
+        </Extension>
+
+Line 2532
+                <Path>CrossDeviceResumeView.dll</Path>
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.XamlMetaDataProvider" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.CrossDeviceResumeResources" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.CrossDeviceResumeControl" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.XDRListener" ThreadingModel="both" />
+            </InProcessServer>
+        </Extension>
+        <Extension Category="windows.activatableClass.inProcessServer">
+
+Line 2533
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.XamlMetaDataProvider" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.CrossDeviceResumeResources" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.CrossDeviceResumeControl" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.XDRListener" ThreadingModel="both" />
+            </InProcessServer>
+        </Extension>
+        <Extension Category="windows.activatableClass.inProcessServer">
+            <InProcessServer>
+
+Line 2538
+        </Extension>
+        <Extension Category="windows.activatableClass.inProcessServer">
+            <InProcessServer>
+                <Path>CrossDeviceResumeTaskbarExtensionsUX.dll</Path>
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XamlMetaDataProvider" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtension" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtensionControl" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtensionResources" ThreadingModel="STA" />
+
+Line 2539
+        <Extension Category="windows.activatableClass.inProcessServer">
+            <InProcessServer>
+                <Path>CrossDeviceResumeTaskbarExtensionsUX.dll</Path>
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XamlMetaDataProvider" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtension" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtensionControl" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtensionResources" ThreadingModel="STA" />
+            </InProcessServer>
+
+Line 2540
+            <InProcessServer>
+                <Path>CrossDeviceResumeTaskbarExtensionsUX.dll</Path>
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XamlMetaDataProvider" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtension" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtensionControl" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtensionResources" ThreadingModel="STA" />
+            </InProcessServer>
+        </Extension>
+
+Line 2541
+                <Path>CrossDeviceResumeTaskbarExtensionsUX.dll</Path>
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XamlMetaDataProvider" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtension" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtensionControl" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtensionResources" ThreadingModel="STA" />
+            </InProcessServer>
+        </Extension>
+        <uap17:Extension Category="windows.packageExtension">
+
+Line 2542
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XamlMetaDataProvider" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtension" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtensionControl" ThreadingModel="STA" />
+                <ActivatableClass ActivatableClassId="CrossDeviceResume.ShellExt.XdrTaskbarExtensionResources" ThreadingModel="STA" />
+            </InProcessServer>
+        </Extension>
+        <uap17:Extension Category="windows.packageExtension">
+            <uap17:PackageExtension Name="com.microsoft.windows.extensionpackage" Id="CrossDeviceResume" DisplayName="Extension Package">
+
+Line 2546
+            </InProcessServer>
+        </Extension>
+        <uap17:Extension Category="windows.packageExtension">
+            <uap17:PackageExtension Name="com.microsoft.windows.extensionpackage" Id="CrossDeviceResume" DisplayName="Extension Package">
+                <uap17:Properties>
+                    <PackageAliases>
+                        <PackageAlias>CrossDeviceResumeAlias</PackageAlias>
+                        <PackageAlias>CrossDeviceResumeTaskbarExtensionsUXAlias</PackageAlias>
+
+Line 2549
+            <uap17:PackageExtension Name="com.microsoft.windows.extensionpackage" Id="CrossDeviceResume" DisplayName="Extension Package">
+                <uap17:Properties>
+                    <PackageAliases>
+                        <PackageAlias>CrossDeviceResumeAlias</PackageAlias>
+                        <PackageAlias>CrossDeviceResumeTaskbarExtensionsUXAlias</PackageAlias>
+                    </PackageAliases>
+                </uap17:Properties>
+            </uap17:PackageExtension>
+
+Line 2550
+                <uap17:Properties>
+                    <PackageAliases>
+                        <PackageAlias>CrossDeviceResumeAlias</PackageAlias>
+                        <PackageAlias>CrossDeviceResumeTaskbarExtensionsUXAlias</PackageAlias>
+                    </PackageAliases>
+                </uap17:Properties>
+            </uap17:PackageExtension>
+        </uap17:Extension>
+
+Line 2577
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.DesktopSpotlightBottomBarHost" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.DesktopSpotlightRelatedHotSpot" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.StateManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.RegistrationStatusCheck" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.UpdateTask" ThreadingModel="both" />
+
+Line 2578
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.DesktopSpotlightRelatedHotSpot" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.StateManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.RegistrationStatusCheck" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Maintenance" ThreadingModel="both" />
+
+Line 2579
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.StateManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.RegistrationStatusCheck" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.AppService" ThreadingModel="both" />
+
+Line 2580
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.RegistrationStatusCheck" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.AppService" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTaskManager" ThreadingModel="both" />
+
+Line 2581
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.RegistrationStatusCheck" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.AppService" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.XamlMetaDataProvider" ThreadingModel="both" />
+
+Line 2582
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.AppService" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.XamlMetaDataProvider" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BooleanToButtonPaddingConverter" ThreadingModel="both" />
+
+Line 2583
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.AppService" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.XamlMetaDataProvider" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BooleanToButtonPaddingConverter" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BooleanToButtonMarginConverter" ThreadingModel="both" />
+
+Line 2584
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTask.AppService" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.XamlMetaDataProvider" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BooleanToButtonPaddingConverter" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BooleanToButtonMarginConverter" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="DesktopSpotlight.BooleanToButtonWidthConverter" ThreadingModel="both" />
+
+Line 3050
+        <ActivatableClass ActivatableClassId="IrisService.IrisServiceImpl" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.DataCacheService" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.DataCachePermissionFixer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+
+Line 3051
+        <ActivatableClass ActivatableClassId="IrisService.DataCacheService" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.DataCachePermissionFixer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationLostTimer" ThreadingModel="both" />
+
+Line 3052
+        <ActivatableClass ActivatableClassId="IrisService.DataCachePermissionFixer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChangeLostTimer" ThreadingModel="both" />
+
+Line 3053
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChangeLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+
+Line 3054
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChangeLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+
+Line 3055
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChangeLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTaskManager" ThreadingModel="both" />
+
+Line 3056
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChangeLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.StateManager" ThreadingModel="both" />
+
+Line 3057
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.WnsChannelRefreshTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChangeLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.StateManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.NotificationService" ThreadingModel="both" />
+
+Line 3058
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChangeLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.StateManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.NotificationService" ThreadingModel="both" />
+      </InProcessServer>
+
+Line 3059
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.OnlineIdChangeLostTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.StateManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="IrisService.NotificationService" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+
+Line 3116
+      <InProcessServer>
+        <Path>RulesEngine.dll</Path>
+        <ActivatableClass ActivatableClassId="RulesEngine.RulesEngineCore" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChanged" ThreadingModel="both" />
+
+Line 3117
+        <Path>RulesEngine.dll</Path>
+        <ActivatableClass ActivatableClassId="RulesEngine.RulesEngineCore" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChangedInternal" ThreadingModel="both" />
+
+Line 3118
+        <ActivatableClass ActivatableClassId="RulesEngine.RulesEngineCore" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChangedInternal" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.UpdateTask" ThreadingModel="both" />
+
+Line 3119
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChangedInternal" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTaskManager" ThreadingModel="both" />
+
+Line 3120
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.Configuration" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChangedInternal" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.StateManager" ThreadingModel="both" />
+
+Line 3121
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.OnlineIdChange" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChangedInternal" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.StateManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.Rule" ThreadingModel="both" />
+
+Line 3122
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChangedInternal" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.StateManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.Rule" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.RuleParser" ThreadingModel="both" />
+
+Line 3123
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChanged" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.RulesEngineContextChangedInternal" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.BackgroundTaskManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.StateManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.Rule" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.RuleParser" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RulesEngine.RuleEvaluator" ThreadingModel="both" />
+
+Line 3191
+                <ActivatableClass ActivatableClassId="Cortana.Internal.Search.CortanaSettingsAppService" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="Cortana.Internal.Search.DataUtility" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="Cortana.Internal.Search.DeviceSearchCacheManager" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="Cortana.Internal.Search.DynamicSearchBoxRefresherBackgroundTask" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="Cortana.Internal.Search.AppsAndSettingsIndexRefreshTask" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="Cortana.Internal.Search.FileExplorerSuggestionPage" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="Cortana.Internal.Search.HeaderHelpers" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="Cortana.Internal.Search.HtmlAppCacheManager" ThreadingModel="both" />
+
+Line 3370
+      <InProcessServer xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
+        <Path>WebExperienceHost.dll</Path>
+        <ActivatableClass ActivatableClassId="WebExperienceHost.AppServiceTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.Configuration" ThreadingModel="both" />
+      </InProcessServer>
+
+Line 3371
+        <Path>WebExperienceHost.dll</Path>
+        <ActivatableClass ActivatableClassId="WebExperienceHost.AppServiceTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.Configuration" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+
+Line 3372
+        <ActivatableClass ActivatableClassId="WebExperienceHost.AppServiceTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.Configuration" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+        <Extension Category="windows.activatableClass.inProcessServer">
+
+Line 3373
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.UpdateTimer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.Maintenance" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.UpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebExperienceHost.BackgroundTask.Configuration" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+        <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
+
+Line 3600
+        <Extension Category="windows.activatableClass.inProcessServer">
+            <InProcessServer>
+                <Path>wsw.dll</Path>
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTask.Configuration" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTask.UpdateTask" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTask.CalculateBatteryCapacityTask" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTaskManager" ThreadingModel="both" />
+            </InProcessServer>
+
+Line 3601
+            <InProcessServer>
+                <Path>wsw.dll</Path>
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTask.Configuration" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTask.UpdateTask" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTask.CalculateBatteryCapacityTask" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTaskManager" ThreadingModel="both" />
+            </InProcessServer>
+        </Extension>
+
+Line 3602
+                <Path>wsw.dll</Path>
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTask.Configuration" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTask.UpdateTask" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTask.CalculateBatteryCapacityTask" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTaskManager" ThreadingModel="both" />
+            </InProcessServer>
+        </Extension>
+        <uap17:Extension Category="windows.packageExtension">
+
+Line 3603
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTask.Configuration" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTask.UpdateTask" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTask.CalculateBatteryCapacityTask" ThreadingModel="both" />
+                <ActivatableClass ActivatableClassId="wsw.BackgroundTaskManager" ThreadingModel="both" />
+            </InProcessServer>
+        </Extension>
+        <uap17:Extension Category="windows.packageExtension">
+            <uap17:PackageExtension Name="com.microsoft.windows.extensionpackage" Id="wsw" DisplayName="Extension Package">
+
+
+========== Startup items matching CrossDevice or Client.CBS ==========
+
+========== Task Scheduler matching CrossDevice or Client.CBS ==========
+
+========== Connected Devices and shell-related services ==========
+
+
+Name        : AppXSvc
+DisplayName : AppX Deployment Service (AppXSVC)
+State       : Running
+StartMode   : Auto
+ProcessId   : 2228
+PathName    : C:\WINDOWS\system32\svchost.exe -k wsappx -p
+
+Name        : BrokerInfrastructure
+DisplayName : Background Tasks Infrastructure Service
+State       : Running
+StartMode   : Auto
+ProcessId   : 1044
+PathName    : C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p
+
+Name        : CDPSvc
+DisplayName : Connected Devices Platform Service
+State       : Stopped
+StartMode   : Disabled
+ProcessId   : 0
+PathName    : C:\WINDOWS\system32\svchost.exe -k LocalService -p
+
+Name        : ClipSVC
+DisplayName : Client License Service (ClipSVC)
+State       : Running
+StartMode   : Manual
+ProcessId   : 2228
+PathName    : C:\WINDOWS\System32\svchost.exe -k wsappx -p
+
+Name        : DiagTrack
+DisplayName : Connected User Experiences and Telemetry
+State       : Stopped
+StartMode   : Disabled
+ProcessId   : 0
+PathName    : C:\WINDOWS\System32\svchost.exe -k utcsvc -p
+
+Name        : NcdAutoSetup
+DisplayName : Network Connected Devices Auto-Setup
+State       : Stopped
+StartMode   : Manual
+ProcessId   : 0
+PathName    : C:\WINDOWS\System32\svchost.exe -k LocalServiceNoNetwork -p
+
+Name        : StateRepository
+DisplayName : State Repository Service
+State       : Running
+StartMode   : Auto
+ProcessId   : 2684
+PathName    : C:\WINDOWS\system32\svchost.exe -k appmodel -p
+
+Name        : UserManager
+DisplayName : User Manager
+State       : Running
+StartMode   : Auto
+ProcessId   : 1356
+PathName    : C:\WINDOWS\system32\svchost.exe -k netsvcs -p
+
+
+
+
+========== Registry keys with CrossDevice strings ==========
+
+Key: Registry::HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+
+Key: Registry::HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+
+Key: Registry::HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+
+Key: Registry::HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+
+Key: Registry::HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CrossDeviceResume
+
+Key: Registry::HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CrossDevice
+NOT FOUND
+
+Key: Registry::HKLM\SOFTWARE\Policies\Microsoft\Windows\CrossDevice
+
+
+AllowCrossDeviceExperience : 0
+AllowCrossDeviceResume     : 0
+DisableResume              : 1
+DisableCrossDeviceResume   : 1
+PSPath                     : Microsoft.PowerShell.Core\Registry::HKLM\SOFTWARE\Policies\Microsoft\Windows\CrossDevice
+PSParentPath               : Microsoft.PowerShell.Core\Registry::HKLM\SOFTWARE\Policies\Microsoft\Windows
+PSChildName                : CrossDevice
+PSProvider                 : Microsoft.PowerShell.Core\Registry
+
+
+
+
+Key: Registry::HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Image File Execution Options\CrossDeviceResume.exe
+NOT FOUND
+
+========== User services: template and dynamic clones ==========
+
+========== Current IFEO settings ==========
+
+Key: Registry::HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\CrossDeviceResume.exe
+
+
+Debugger  : rundll32.exe
+UseFilter : 
+
+
+
+
+Key: Registry::HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\CrossDeviceResume.exe
+
+
+Debugger  : rundll32.exe
+UseFilter : 
+
+
+
