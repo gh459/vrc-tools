@@ -1,0 +1,322 @@
+﻿diff --git "a/C:\\Users\\User\\Documents\\nano11-main\\BASELINE_AUTOUNATTEND_PRE_P0_FIX.bak" "b/C:\\Users\\User\\Documents\\nano11-main\\autounattend.xml"
+index 6f6c3ea..e2c07aa 100644
+--- "a/C:\\Users\\User\\Documents\\nano11-main\\BASELINE_AUTOUNATTEND_PRE_P0_FIX.bak"
++++ "b/C:\\Users\\User\\Documents\\nano11-main\\autounattend.xml"
+@@ -12,7 +12,7 @@
+       <RunSynchronous xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+         <RunSynchronousCommand wcm:action="add">
+           <Order>1</Order>
+-          <Path>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "try { $candidates = @('C:\Windows\Panther\unattend.xml', 'C:\Windows\Panther\autounattend.xml', 'C:\Windows\System32\Sysprep\autounattend.xml', 'C:\Windows\System32\Sysprep\unattend.xml'); foreach ($p in $candidates) { if (Test-Path $p) { $xml = [xml]::new(); $xml.Load($p); if ($xml.unattend.Extensions.ExtractScript) { $sb = [scriptblock]::Create( $xml.unattend.Extensions.ExtractScript ); Invoke-Command -ScriptBlock $sb -ArgumentList $xml; break } } } } catch {}"</Path>
++          <Path>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -File C:\Windows\Setup\Scripts\ExtractUnattend.ps1</Path>
+         </RunSynchronousCommand>
+         <RunSynchronousCommand wcm:action="add">
+           <Order>2</Order>
+@@ -20,11 +20,11 @@
+         </RunSynchronousCommand>
+         <RunSynchronousCommand wcm:action="add">
+           <Order>3</Order>
+-          <Path>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "try { if (Test-Path 'C:\Windows\Setup\Scripts\Specialize.ps1') { &amp; 'C:\Windows\Setup\Scripts\Specialize.ps1' } } catch {}"</Path>
++          <Path>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -File C:\Windows\Setup\Scripts\Specialize.ps1</Path>
+         </RunSynchronousCommand>
+         <RunSynchronousCommand wcm:action="add">
+           <Order>4</Order>
+-          <Path>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "try { reg.exe load HKU\DefaultUser C:\Users\Default\NTUSER.DAT; if (Test-Path 'C:\Windows\Setup\Scripts\DefaultUser.ps1') { &amp; 'C:\Windows\Setup\Scripts\DefaultUser.ps1' }; [GC]::Collect(); [GC]::WaitForPendingFinalizers(); Start-Sleep -Seconds 1; for ($i = 0; $i -lt 5; $i++) { reg.exe unload HKU\DefaultUser; if ($LASTEXITCODE -eq 0) { break }; Start-Sleep -Seconds 1 } } catch {}; exit 0"</Path>
++          <Path>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -File C:\Windows\Setup\Scripts\ApplyDefaultUser.ps1</Path>
+         </RunSynchronousCommand>
+         <RunSynchronousCommand wcm:action="add">
+           <Order>5</Order>
+@@ -43,7 +43,7 @@
+       <RunSynchronous xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+         <RunSynchronousCommand wcm:action="add">
+           <Order>1</Order>
+-          <Path>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "try { $candidates = @('C:\Windows\Panther\unattend.xml', 'C:\Windows\Panther\autounattend.xml', 'C:\Windows\System32\Sysprep\autounattend.xml', 'C:\Windows\System32\Sysprep\unattend.xml'); foreach ($p in $candidates) { if (Test-Path $p) { $xml = [xml]::new(); $xml.Load($p); if ($xml.unattend.Extensions.ExtractScript) { $sb = [scriptblock]::Create( $xml.unattend.Extensions.ExtractScript ); Invoke-Command -ScriptBlock $sb -ArgumentList $xml; break } } } } catch {}"</Path>
++          <Path>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -File C:\Windows\Setup\Scripts\ExtractUnattend.ps1</Path>
+         </RunSynchronousCommand>
+         <RunSynchronousCommand wcm:action="add">
+           <Order>2</Order>
+@@ -51,11 +51,11 @@
+         </RunSynchronousCommand>
+         <RunSynchronousCommand wcm:action="add">
+           <Order>3</Order>
+-          <Path>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "try { if (Test-Path 'C:\Windows\Setup\Scripts\Specialize.ps1') { &amp; 'C:\Windows\Setup\Scripts\Specialize.ps1' } } catch {}"</Path>
++          <Path>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -File C:\Windows\Setup\Scripts\Specialize.ps1</Path>
+         </RunSynchronousCommand>
+         <RunSynchronousCommand wcm:action="add">
+           <Order>4</Order>
+-          <Path>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "try { reg.exe load HKU\DefaultUser C:\Users\Default\NTUSER.DAT; if (Test-Path 'C:\Windows\Setup\Scripts\DefaultUser.ps1') { &amp; 'C:\Windows\Setup\Scripts\DefaultUser.ps1' }; [GC]::Collect(); [GC]::WaitForPendingFinalizers(); Start-Sleep -Seconds 1; for ($i = 0; $i -lt 5; $i++) { reg.exe unload HKU\DefaultUser; if ($LASTEXITCODE -eq 0) { break }; Start-Sleep -Seconds 1 } } catch {}; exit 0"</Path>
++          <Path>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -File C:\Windows\Setup\Scripts\ApplyDefaultUser.ps1</Path>
+         </RunSynchronousCommand>
+         <RunSynchronousCommand wcm:action="add">
+           <Order>5</Order>
+@@ -108,15 +108,7 @@
+       <FirstLogonCommands>
+         <SynchronousCommand wcm:action="add">
+           <Order>1</Order>
+-          <CommandLine>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "try { if (Test-Path 'C:\ProgramData\Winhance\Unattend\Scripts\Winhancements.ps1') { &amp; 'C:\ProgramData\Winhance\Unattend\Scripts\Winhancements.ps1' } } catch {}"</CommandLine>
+-        </SynchronousCommand>
+-        <SynchronousCommand wcm:action="add">
+-          <Order>2</Order>
+-          <CommandLine>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "try { if (Test-Path 'C:\Windows\Setup\Scripts\FirstLogon.ps1') { &amp; 'C:\Windows\Setup\Scripts\FirstLogon.ps1' } } catch {}"</CommandLine>
+-        </SynchronousCommand>
+-        <SynchronousCommand wcm:action="add">
+-          <Order>3</Order>
+-          <CommandLine>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "try { if (Test-Path 'C:\ProgramData\Winhance\Unattend\Scripts\Winhancements.ps1') { &amp; 'C:\ProgramData\Winhance\Unattend\Scripts\Winhancements.ps1' -UserCustomizations } } catch {}"</CommandLine>
++          <CommandLine>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -File C:\Windows\Setup\Scripts\RunFirstLogon.ps1</CommandLine>
+         </SynchronousCommand>
+       </FirstLogonCommands>
+     </component>
+@@ -157,15 +149,7 @@
+       <FirstLogonCommands>
+         <SynchronousCommand wcm:action="add">
+           <Order>1</Order>
+-          <CommandLine>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "try { if (Test-Path 'C:\ProgramData\Winhance\Unattend\Scripts\Winhancements.ps1') { &amp; 'C:\ProgramData\Winhance\Unattend\Scripts\Winhancements.ps1' } } catch {}"</CommandLine>
+-        </SynchronousCommand>
+-        <SynchronousCommand wcm:action="add">
+-          <Order>2</Order>
+-          <CommandLine>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "try { if (Test-Path 'C:\Windows\Setup\Scripts\FirstLogon.ps1') { &amp; 'C:\Windows\Setup\Scripts\FirstLogon.ps1' } } catch {}"</CommandLine>
+-        </SynchronousCommand>
+-        <SynchronousCommand wcm:action="add">
+-          <Order>3</Order>
+-          <CommandLine>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -Command "try { if (Test-Path 'C:\ProgramData\Winhance\Unattend\Scripts\Winhancements.ps1') { &amp; 'C:\ProgramData\Winhance\Unattend\Scripts\Winhancements.ps1' -UserCustomizations } } catch {}"</CommandLine>
++          <CommandLine>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -WindowStyle Hidden -File C:\Windows\Setup\Scripts\RunFirstLogon.ps1</CommandLine>
+         </SynchronousCommand>
+       </FirstLogonCommands>
+     </component>
+@@ -1916,7 +1900,11 @@ Write-Log "=====================================================================
+ Write-Log "Winhance Windows Optimization &amp; Customization Script Completed" "SUCCESS"
+ Write-Log "================================================================================" "INFO" 
+ </File>
+-    <File path="C:\Windows\Setup\Scripts\Specialize.ps1">$scripts = @(
++    <File path="C:\Windows\Setup\Scripts\Specialize.ps1">$markerDir = "C:\ProgramData\nano11";
++if (-not (Test-Path -LiteralPath $markerDir)) { New-Item -ItemType Directory -Force -Path $markerDir -ErrorAction SilentlyContinue | Out-Null; }
++Remove-Item -LiteralPath "$markerDir\specialize.succeeded", "$markerDir\specialize.failed" -Force -ErrorAction SilentlyContinue;
++Set-Content -LiteralPath "$markerDir\specialize.started" -Value (Get-Date -Format "yyyy-MM-dd HH:mm:ss") -Encoding ascii -ErrorAction SilentlyContinue;
++$scripts = @(
+ 	{
+ 		net.exe accounts /maxpwage:UNLIMITED /minpwlen:0;
+ 		net.exe user Administrator /active:yes;
+@@ -2024,7 +2012,7 @@ Write-Log "=====================================================================
+ 		# Windows Defender: Complete Service, ELAM Driver &amp; Policy Suppression
+ 		if (Test-Path 'C:\Windows\Setup\Scripts\remove-defender.flag') {
+ 			$defSvcs = @(
+-				'WinDefend', 'Sense', 'SecurityHealthService', 'wscsvc',
++				'WinDefend', 'MDCoreSvc', 'Sense', 'SecurityHealthService', 'wscsvc',
+ 				'webthreatdefsvc', 'webthreatdefusersvc',
+ 				'WdBoot', 'WdFilter', 'WdNisDrv', 'SgrmBroker', 'SgrmAgent'
+ 			);
+@@ -2040,6 +2028,16 @@ Write-Log "=====================================================================
+ 			reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableIOAVProtection" /t REG_DWORD /d 1 /f 2&gt;$null;
+ 			reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /v "EnableSmartScreen" /t REG_DWORD /d 0 /f 2&gt;$null;
+ 			reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v "SmartScreenEnabled" /t REG_SZ /d "Off" /f 2&gt;$null;
++			reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "SmartScreenEnabled" /t REG_DWORD /d 0 /f 2&gt;$null;
++			reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "SmartScreenPuaEnabled" /t REG_DWORD /d 0 /f 2&gt;$null;
++			reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter" /v "EnabledV9" /t REG_DWORD /d 0 /f 2&gt;$null;
++			reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen" /v "ConfigureAppInstallControlEnabled" /t REG_DWORD /d 0 /f 2&gt;$null;
++			reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen" /v "ConfigureAppInstallControl" /t REG_SZ /d "Anywhere" /f 2&gt;$null;
++			reg.exe delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\smartscreen.exe" /f 2&gt;$null;
++			reg.exe delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\smartscreen.exe" /f 2&gt;$null;
++			reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "SettingsPageVisibility" /t REG_SZ /d "hide:windowsdefender;windowsdefender-account;windowsdefender-device;windowsdefender-firewall;virus" /f 2&gt;$null;
++			reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.SecHealthUI_8wekyb3d8bbwe" /f 2&gt;$null;
++			reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.SecHealthUI_cw5n1h2txyewy" /f 2&gt;$null;
+ 			reg.exe delete "HKLM\SOFTWARE\Classes\CLSID\{09A47860-11B0-4DA5-AFA5-26D86198A780}" /f 2&gt;$null;
+ 			reg.exe delete "HKLM\SOFTWARE\Classes\*\shellex\ContextMenuHandlers\EPP" /f 2&gt;$null;
+ 			reg.exe delete "HKLM\SOFTWARE\Classes\Directory\shellex\ContextMenuHandlers\EPP" /f 2&gt;$null;
+@@ -2121,6 +2119,7 @@ Write-Log "=====================================================================
+ &amp; {
+   [float] $complete = 0;
+   [float] $increment = 100 / $scripts.Count;
++  $specErrors = @();
+   foreach( $script in $scripts ) {
+     Write-Progress -Activity 'Running scripts to customize your Windows installation. Do not close this window.' -PercentComplete $complete;
+     '*** Will now execute command "{0}".' -f $(
+@@ -2133,11 +2132,35 @@ Write-Log "=====================================================================
+       }
+     );
+     $start = [datetime]::Now;
+-    &amp; $script;
++    try {
++      &amp; $script;
++    } catch {
++      $specErrors += ("Script block failed: {0}" -f $_);
++    }
+     '*** Finished executing command after {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+     "`r`n" * 3;
+     $complete += $increment;
+   }
++  if ($specErrors.Count -eq 0) {
++    $adminToken = (Get-ItemProperty -LiteralPath 'Registry::HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System' -Name 'FilterAdministratorToken' -ErrorAction SilentlyContinue).FilterAdministratorToken;
++    if ($adminToken -ne 0) {
++      $specErrors += "Post-verification failed: FilterAdministratorToken is not 0";
++    }
++    if (Test-Path 'C:\Windows\Setup\Scripts\remove-defender.flag') {
++      $mdCore = (Get-ItemProperty -LiteralPath 'Registry::HKLM\SYSTEM\CurrentControlSet\Services\MDCoreSvc' -Name 'Start' -ErrorAction SilentlyContinue).Start;
++      if ($mdCore -ne 4) {
++        $specErrors += "Post-verification failed: MDCoreSvc Start is not 4 ($mdCore)";
++      }
++    }
++  }
++  if ($specErrors.Count -eq 0) {
++    Remove-Item -LiteralPath "C:\ProgramData\nano11\specialize.failed" -Force -ErrorAction SilentlyContinue;
++    Set-Content -LiteralPath "C:\ProgramData\nano11\specialize.succeeded" -Value (Get-Date -Format "yyyy-MM-dd HH:mm:ss") -Encoding ascii -ErrorAction SilentlyContinue;
++  } else {
++    Remove-Item -LiteralPath "C:\ProgramData\nano11\specialize.succeeded" -Force -ErrorAction SilentlyContinue;
++    Set-Content -LiteralPath "C:\ProgramData\nano11\specialize.failed" -Value ($specErrors -join "`r`n") -Encoding ascii -ErrorAction SilentlyContinue;
++    exit 1;
++  }
+ } *&gt;&amp;1 &gt;&gt; "C:\Windows\Setup\Scripts\Specialize.log";</File>
+     <File path="C:\Windows\Setup\Scripts\UserOnce.ps1">$scripts = @(
+ 	{
+@@ -2203,6 +2226,12 @@ Write-Log "=====================================================================
+ 		# 最終プロセスクリーンアップ (Explorer 初回再描画によるゾンビプロセスの完全掃討)
+ 		Stop-Process -Name 'SearchHost', 'CrossDeviceResume' -Force -ErrorAction SilentlyContinue;
+ 	};
++	{
++		# Remove Windows Security App for current interactive user if flag is present
++		if (Test-Path 'C:\Windows\Setup\Scripts\remove-defender.flag') {
++			Get-AppxPackage "*SecHealthUI*" -ErrorAction SilentlyContinue | Remove-AppxPackage -ErrorAction SilentlyContinue;
++		}
++	};
+ );
+ 
+ &amp; {
+@@ -2302,6 +2331,7 @@ Write-Log "=====================================================================
+ &amp; {
+   [float] $complete = 0;
+   [float] $increment = 100 / $scripts.Count;
++  $defErrors = @();
+   foreach( $script in $scripts ) {
+     Write-Progress -Activity "Running scripts to modify the default user's registry hive. Do not close this window." -PercentComplete $complete;
+     '*** Will now execute command "{0}".' -f $(
+@@ -2314,13 +2344,28 @@ Write-Log "=====================================================================
+       }
+     );
+     $start = [datetime]::Now;
+-    &amp; $script;
++    try {
++      &amp; $script;
++    } catch {
++      $defErrors += ("Script block failed: {0}" -f $_);
++    }
+     '*** Finished executing command after {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+     "`r`n" * 3;
+     $complete += $increment;
+   }
+-} *&gt;&amp;1 &gt;&gt; "C:\Windows\Setup\Scripts\DefaultUser.log";</File>
+-    <File path="C:\Windows\Setup\Scripts\FirstLogon.ps1">$scripts = @(
++  if ($defErrors.Count -gt 0) {
++    Write-Error ($defErrors -join "`r`n");
++    exit 1;
++  }
++} *&gt;&amp;1 &gt;&gt; "C:\Windows\Setup\Scripts\DefaultUser.log";
++if (-not $?) { exit 1; }</File>
++    <File path="C:\Windows\Setup\Scripts\FirstLogon.ps1">try {
++	$initMarkerDir = "C:\ProgramData\nano11";
++	if (Test-Path -LiteralPath $initMarkerDir) {
++		Remove-Item -LiteralPath "$initMarkerDir\firstlogon.done", "$initMarkerDir\firstlogon_script.failed" -Force -ErrorAction SilentlyContinue;
++	}
++} catch {}
++$scripts = @(
+ 	{
+ 		# Guarantee User account has NO password (completely blank) and cannot expire
+ 		try {
+@@ -2448,11 +2493,13 @@ Write-Log "=====================================================================
+ 		schtasks.exe /change /tn "\Microsoft\Windows\CrossDevice\ReconcileSharing" /disable 2&gt;$null;
+ 	};
+ 	{
+-		# Windows Security &amp; Defender: Secondary Cleanup &amp; Task Purge
++		# Windows Security &amp; Defender: Secondary Cleanup, App Deprovisioning &amp; Task Purge
+ 		if (Test-Path 'C:\Windows\Setup\Scripts\remove-defender.flag') {
+ 			reg.exe delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "SecurityHealth" /f 2&gt;$null;
++			reg.exe delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\smartscreen.exe" /f 2&gt;$null;
++			reg.exe delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\smartscreen.exe" /f 2&gt;$null;
+ 			$defSvcs = @(
+-				'WinDefend', 'Sense', 'SecurityHealthService', 'wscsvc',
++				'WinDefend', 'MDCoreSvc', 'Sense', 'SecurityHealthService', 'wscsvc',
+ 				'webthreatdefsvc', 'webthreatdefusersvc',
+ 				'WdBoot', 'WdFilter', 'WdNisDrv', 'SgrmBroker', 'SgrmAgent'
+ 			);
+@@ -2462,19 +2509,48 @@ Write-Log "=====================================================================
+ 				&amp; sc.exe stop $s &gt;$null 2&gt;&amp;1;
+ 			}
+ 			
++			# Deprovision and eliminate Microsoft.SecHealthUI (Windows Security App)
++			try {
++				$secPkgs = @(Get-AppxPackage -AllUsers -Name "*SecHealthUI*" -ErrorAction SilentlyContinue);
++				$secProv = @(Get-AppxProvisionedPackage -Online -ErrorAction SilentlyContinue | Where-Object { $_.DisplayName -like "*SecHealthUI*" -or $_.PackageName -like "*SecHealthUI*" });
++				$appxStore = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore';
++				foreach ($pkg in $secPkgs) {
++					New-Item "$appxStore\Deprovisioned\$($pkg.PackageFamilyName)" -Force -ErrorAction SilentlyContinue | Out-Null;
++					$sids = @('S-1-5-18') + @(Get-ChildItem $appxStore -ErrorAction SilentlyContinue | Where-Object { $_.PSChildName -like 'S-1-5-21*' } | Select-Object -ExpandProperty PSChildName);
++					foreach ($sid in $sids) {
++						New-Item "$appxStore\EndOfLife\$sid\$($pkg.PackageFullName)" -Force -ErrorAction SilentlyContinue | Out-Null;
++					}
++					&amp; dism.exe /online /set-nonremovableapppolicy /packagefamily:$($pkg.PackageFamilyName) /nonremovable:0 &gt;$null 2&gt;&amp;1;
++					Remove-AppxPackage -Package $pkg.PackageFullName -AllUsers -ErrorAction SilentlyContinue;
++				}
++				foreach ($pkg in $secProv) {
++					Remove-AppxProvisionedPackage -Online -PackageName $pkg.PackageName -AllUsers -ErrorAction SilentlyContinue;
++				}
++				Get-AppxPackage "*SecHealthUI*" -ErrorAction SilentlyContinue | Remove-AppxPackage -ErrorAction SilentlyContinue;
++			} catch {}
++
+ 			# Best-effort task disabling
+ 			Get-ScheduledTask -TaskPath "\Microsoft\Windows\Windows Defender\*" -ErrorAction SilentlyContinue | Disable-ScheduledTask -ErrorAction SilentlyContinue | Out-Null;
+ 			
+-			# Purge definition update cache if present
++			# Purge definition update cache &amp; telemetry data if present
+ 			$defCaches = @(
+-				'C:\ProgramData\Microsoft\Windows Defender\Definition Updates',
+-				'C:\ProgramData\Microsoft\Windows Defender\Scans'
++				'C:\ProgramData\Microsoft\Windows Defender',
++				'C:\Program Files\Windows Defender Advanced Threat Protection'
+ 			);
+ 			foreach ($dc in $defCaches) {
+ 				if (Test-Path -LiteralPath $dc) {
+-					Remove-Item -LiteralPath $dc -Recurse -Force -ErrorAction SilentlyContinue;
++					Remove-Item -LiteralPath "$dc\*" -Recurse -Force -ErrorAction SilentlyContinue;
+ 				}
+ 			}
++
++			# Remove Windows Security Start Menu shortcuts if present
++			$startDirs = @(
++				"$env:ProgramData\Microsoft\Windows\Start Menu\Programs",
++				"$env:APPDATA\Microsoft\Windows\Start Menu\Programs"
++			);
++			foreach ($sd in $startDirs) {
++				Get-ChildItem -Path $sd -Filter "*Windows Security*.lnk" -Recurse -ErrorAction SilentlyContinue | Remove-Item -Force -ErrorAction SilentlyContinue;
++			}
+ 		}
+ 	};
+ 	{
+@@ -2905,6 +2981,7 @@ goto MENU
+ &amp; {
+   [float] $complete = 0;
+   [float] $increment = 100 / $scripts.Count;
++  $flErrors = @();
+   foreach( $script in $scripts ) {
+     Write-Progress -Activity 'Running scripts to finalize your Windows installation. Do not close this window.' -PercentComplete $complete;
+     '*** Will now execute command "{0}".' -f $(
+@@ -2917,11 +2994,21 @@ goto MENU
+       }
+     );
+     $start = [datetime]::Now;
+-    &amp; $script;
++    try {
++      &amp; $script;
++    } catch {
++      $flErrors += ("Script block failed: {0}" -f $_);
++    }
+     '*** Finished executing command after {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+     "`r`n" * 3;
+     $complete += $increment;
+   }
+-} *&gt;&amp;1 &gt;&gt; "C:\Windows\Setup\Scripts\FirstLogon.log";</File>
++  if ($flErrors.Count -gt 0) {
++    Remove-Item -LiteralPath "C:\ProgramData\nano11\firstlogon.done" -Force -ErrorAction SilentlyContinue;
++    Set-Content -LiteralPath "C:\ProgramData\nano11\firstlogon_script.failed" -Value ($flErrors -join "`r`n") -Encoding ascii -ErrorAction SilentlyContinue;
++    exit 1;
++  }
++} *&gt;&amp;1 &gt;&gt; "C:\Windows\Setup\Scripts\FirstLogon.log";
++if (-not $? -or (Test-Path -LiteralPath "C:\ProgramData\nano11\firstlogon_script.failed")) { exit 1; }</File>
+   </Extensions>
+ </unattend>
